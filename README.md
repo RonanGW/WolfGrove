@@ -1,3 +1,9 @@
+#WolfGrove
+This is meant to be my personal website. 
+I've just started, so there is no instructions other than the basics of react, which I have left below for the time being
+This page will, and therefore this README, will change drastically over the next couple weeks.
+
+--------------------------------------------------------------------------------------------------------------------------------
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
