@@ -11,12 +11,18 @@ class Experience extends Component {
         );
     };
 
+    Redirect = (link) => {
+        window.location.assign(link);
+    }
+
     render() {
         return (
             <div className="Experience">
-                <h3>Resume and Links</h3>
                 <div>
+                    <h3>Resume and Links</h3>
                     <button onClick={this.DownloadResume}>download</button>
+                    <button onClick={this.Redirect.bind(this, "https://github.com/RonanGW")}>GitHub</button>
+                    <button onClick={this.Redirect.bind(this, "https://www.linkedin.com/in/ronan-wolfe/")}>LinkedIn</button>
                 </div>
                 <p> I have an aspiring software engineer with the credentials to back up that dream. I grew up in Los Angeles where I took an interest in
                     the life sciences, working as a zookeeper and frequently volunteering for conservation projects. Since 2018 I have traveled

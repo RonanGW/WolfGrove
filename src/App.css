@@ -28,6 +28,11 @@
     width: 500px;
 }
 
+.Experience {
+    display: flex;
+    flex-direction: row;
+}
+
 .Footer {
     display: flex;
     justify-content: center;
