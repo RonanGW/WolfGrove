@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { saveAs } from "file-saver";
 import './App.css';
 
-class Experience extends Component {
+class Bio extends Component {
 
     DownloadResume = () => {
         saveAs(
@@ -17,7 +17,7 @@ class Experience extends Component {
 
     render() {
         return (
-            <div className="Experience">
+            <div className="Bio">
                 <div>
                     <h3>Resume and Links</h3>
                     <button onClick={this.DownloadResume}>download</button>
@@ -36,4 +36,4 @@ class Experience extends Component {
     }
 }
 
-export default Experience;
+export default Bio;

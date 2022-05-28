@@ -28,7 +28,12 @@
     width: 500px;
 }
 
-.Experience {
+.Bio {
+    display: flex;
+    flex-direction: row;
+}
+
+.SchoolDesc {
     display: flex;
     flex-direction: row;
 }

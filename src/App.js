@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import Intro from './Intro.js';
-import Experience from './Experience.js';
+import Bio from './Bio.js';
+import Education from './Education.js';
 import Footer from './Footer.js';
 
 class App extends Component {
@@ -13,7 +14,8 @@ class App extends Component {
                     <h3>Ronan</h3>
                 </header>
                 <Intro />
-                <Experience />
+                <Bio />
+                <Education />
                 <Footer />
             </div>
         );
