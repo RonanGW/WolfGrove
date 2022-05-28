@@ -6,6 +6,7 @@ import Education from './Education.js';
 import Resume from './Resume';
 import Footer from './Footer.js';
 import Portfolio from './Portfolio';
+import Testimonials from './Testimonials';
 
 class App extends Component {
     render() {
@@ -20,6 +21,7 @@ class App extends Component {
                 <Education />
                 <Resume />
                 <Portfolio />
+                <Testimonials />
                 <Footer />
             </div>
         );
