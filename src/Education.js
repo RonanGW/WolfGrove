@@ -24,7 +24,7 @@ class Education extends Component {
                 <div className="SchoolDesc">
                     <div>
                         {/* Icon */}
-                        <h2>"Zoo Magnet</h2>
+                        <h2>Zoo Magnet</h2>
                         <h3>North Hollywood High School Biological Sciences Magnet</h3>
                         <h3>High School Diploma</h3>
                         <p>September 2014-June 2018</p>

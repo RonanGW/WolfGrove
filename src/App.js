@@ -3,6 +3,7 @@ import './App.css';
 import Intro from './Intro.js';
 import Bio from './Bio.js';
 import Education from './Education.js';
+import Resume from './Resume';
 import Footer from './Footer.js';
 
 class App extends Component {
@@ -16,6 +17,7 @@ class App extends Component {
                 <Intro />
                 <Bio />
                 <Education />
+                <Resume />
                 <Footer />
             </div>
         );
