@@ -44,6 +44,27 @@
 
 .Footer {
     display: flex;
-    justify-content: center;
-    background-color: darkslategray;
+    justify-content: space-between;
+    background-color: #207567;
+    color: #DFEAE2;
+    position: relative;
+}
+
+.Footer-cols {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Contact-Footnote {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2vh;
+    padding-right: 2vh;
+}
+
+.Copyright {
+    padding: 1vh;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }

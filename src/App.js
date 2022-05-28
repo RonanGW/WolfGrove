@@ -15,7 +15,7 @@ class App extends Component {
             <div className="App">
                 <header className="App-header">
                     <div>
-                        <h1>Wolf Grove</h1>
+                        <h1>WolfGrove</h1>
                         {/*Icon*/}
                     </div>
                     <Link to="Intro" spy={true} smooth={true}>Intro</Link>

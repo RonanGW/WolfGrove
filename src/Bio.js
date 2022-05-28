@@ -14,7 +14,7 @@ class Bio extends Component {
     Redirect = (link) => {
         window.location.assign(link);
     }
-
+    
     render() {
         return (
             <div className="Bio">
