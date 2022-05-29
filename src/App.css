@@ -38,6 +38,26 @@
     width: 500px;
 }
 
+.DLLogo {
+    height: 64px;
+    width: 64px;
+    background: url("../public/DownloadIcon.png") no-repeat scroll 0 0 transparent;
+    border: none;
+}
+
+.LILogo {
+    height: 64px;
+    width: 64px;
+    background: url("../public/LinkedInLogo.png") no-repeat scroll 0 0 transparent;
+    border: none;
+}
+.GHLogo {
+    height: 64px;
+    width: 64px;
+    background: url("../public/GitHubLogo.png") no-repeat scroll 0 0 transparent;
+    border: none;
+}
+
 .Bio {
     display: flex;
     flex-direction: row;
