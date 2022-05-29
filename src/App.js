@@ -4,10 +4,10 @@ import './App.css';
 import Intro from './Intro.js';
 import Bio from './Bio.js';
 import Education from './Education.js';
-import Resume from './Resume';
+import Resume from './Resume.js';
 import Footer from './Footer.js';
-import Portfolio from './Portfolio';
-import Testimonials from './Testimonials';
+import Portfolio from './Portfolio.js';
+import Testimonials from './Testimonials.js';
 
 class App extends Component {
     render() {
@@ -18,12 +18,14 @@ class App extends Component {
                         <h1>WolfGrove</h1>
                         {/*Icon*/}
                     </div>
-                    <Link to="Intro" spy={true} smooth={true}>Intro</Link>
-                    <Link to="Bio" spy={true} smooth={true}>Bio</Link>
-                    <Link to="Education" spy={true} smooth={true}>Education</Link>
-                    <Link to="Resume" spy={true} smooth={true}>Resume</Link>
-                    <Link to="Portfolio" spy={true} smooth={true}>Portfolio</Link>
-                    <Link to="Testimonials" spy={true} smooth={true}>Testimonials</Link>
+                    <div className="header-button">
+                        <Link className="header-button" to="Intro" spy={true} smooth={true}>Intro</Link>
+                        <Link className="header-button" to="Bio" spy={true} smooth={true}>Bio</Link>
+                        <Link className="header-button" to="Education" spy={true} smooth={true}>Education</Link>
+                        <Link className="header-button" to="Resume" spy={true} smooth={true}>Resume</Link>
+                        <Link className="header-button" to="Portfolio" spy={true} smooth={true}>Portfolio</Link>
+                        <Link className="header-button" to="Testimonials" spy={true} smooth={true}>Testimonials</Link>
+                    </div>
                 </header>
                 <Intro/>
                 <Bio />
