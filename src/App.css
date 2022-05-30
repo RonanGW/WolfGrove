@@ -27,10 +27,13 @@
 
 .Intro {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 3%;
+    padding-left: 30vh;
+    padding-right: 30vh;
+    padding-top: 5vh;
+    text-align: center;
 }
 
 .PFP {
@@ -75,7 +78,7 @@
 }
 
 .Bio-item {
-    margin: 15px;
+    margin: 25px;<a style={{ color: "#00008B" }} 
 }
 
 .Bio-PFP {
@@ -91,13 +94,13 @@
     opacity: 0;
     width: 0;
     height: 0;
-    transition: width 0.5s 0.5s, height 0.5s 0.5s, opacity 0.5s;
+    transition: width 0.15s 0.15s, height 0.15s 0.15s, opacity 0.15s;
 }
 
 .fadeIn {
     opacity: 1;
     width: 50vh;
-    transition: width 0.5s, height 0.5s, opacity 0.5s 0.5s;
+    transition: width 0.15s, height 0.15s, opacity 0.15s 0.15s;
 }
 
 .SchoolDesc {

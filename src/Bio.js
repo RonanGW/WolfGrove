@@ -52,22 +52,25 @@ class Bio extends Component {
                     <div className="Bio-item">
                         <div className={this.state.highlights ? 'fadeIn' : 'fadeOut'}>
                             <h3>My Story</h3>
-                            <p> I'm an aspiring software engineer with the credentials to back up that dream. I grew up in Los Angeles where I took an interest in
+                            <p> I'm an aspiring software engineer with the experience to back up that dream. I grew up in Los Angeles where I took an interest in
                                 the life sciences, working as a zookeeper and frequently volunteering for conservation projects. Since 2018 I have traveled
                                 around the country and gone to college. I've met people of all kinds and lived in the biggest cities, small towns and everything in
                                 between. Feeling well-rounded, I am excitedly building the foundation for a career for myself. I've earned my Bachelor's of Computer Science
                                 of which I graduated early cum laude from Kalamazoo College as well as worked in compression algorithm development research to both learn more
                                 and prove my aptitude.
                             </p>
-                            <button onClick={this.handleFade}>The Highlights</button>
+                            <a style={{ color: "#00008B" }} onClick={this.handleFade}>Read The Highlights>></a>
                         </div>
                         <div className={this.state.highlights ? 'fadeOut' : 'fadeIn'}>
                             <h3>The Highlights</h3>
-                            <p> - Software Engineer
-                                - Data Scientist
-                                - Biotech
-                            </p>
-                            <button onClick={this.handleFade}>My Story</button>
+                            <ul>
+                                <li style={{ paddingBottom: "15px" }}>Software Engineer</li>
+                                <li style={{ paddingBottom: "15px" }}>Data Scientist</li>
+                                <li style={{ paddingBottom: "15px" }}>Biotech</li>
+                                <li style={{ paddingBottom: "15px" }}>IT</li>
+                                <li style={{ paddingBottom: "15px" }}>Conservation</li>
+                            </ul>
+                            <a style={{ color: "#00008B" }} onClick={this.handleFade}>Read My Story>></a>
                         </div>
                     </div>
                 </div>

@@ -12,16 +12,18 @@ class Footer extends Component {
             <div className="Footer">
                 <div className="Footer-cols">
                     <div className="Contact-Footnote">
-                        <h6>Contact Details</h6>
+                        <h3>Contact Details</h3>
                         <p>Email: ronangwolfe@gmail.com</p>
                     </div>
                     <div className="Contact-Footnote">
-                        <h6>Socials</h6>
-                        <button onClick={this.Redirect.bind(this, "https://github.com/RonanGW")}>GitHub</button>
-                        <button onClick={this.Redirect.bind(this, "https://www.linkedin.com/in/ronan-wolfe/")}>LinkedIn</button>
+                        <h3>Socials</h3>
+                        <div>
+                        <button title="Link to my GitHub" className="GHLogo" onClick={this.Redirect.bind(this, "https://github.com/RonanGW")}></button>
+                        <button title="Link to my LinkedIn" className="LILogo" onClick={this.Redirect.bind(this, "https://www.linkedin.com/in/ronan-wolfe/")}></button>
                         </div>
+                    </div>
                 </div>
-                <div className="Copyright"> ©2022 WolfGrove </div>
+                <div className="Copyright"><p>&copy; WolfGrove</p></div>
             </div>
         );
     }
