@@ -65,8 +65,6 @@
 }
 
 .Bio {
-    display: flex;
-    flex-direction: column;
     background-color: #FEFBEA;
     padding: 3vh;
 }
@@ -74,11 +72,12 @@
 .Bio-content {
     display: flex;
     justify-content: center;
+    flex-flow: row wrap;
     align-items: center;
 }
 
 .Bio-item {
-    margin: 25px;<a style={{ color: "#00008B" }} 
+    margin: 25px;
 }
 
 .Bio-PFP {

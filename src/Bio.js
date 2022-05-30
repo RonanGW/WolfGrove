@@ -61,7 +61,7 @@ class Bio extends Component {
                             </p>
                             <a style={{ color: "#00008B" }} onClick={this.handleFade}>Read The Highlights>></a>
                         </div>
-                        <div className={this.state.highlights ? 'fadeOut' : 'fadeIn'}>
+                        <div style={window.innerWidth < 675 ? { marginLeft: "85px" } : {} } className={this.state.highlights ? 'fadeOut' : 'fadeIn'}>
                             <h3>The Highlights</h3>
                             <ul>
                                 <li style={{ paddingBottom: "15px" }}>Software Engineer</li>
