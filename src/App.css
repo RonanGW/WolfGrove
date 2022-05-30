@@ -42,6 +42,7 @@
     height: 64px;
     width: 64px;
     background: url("../public/DownloadIcon.png") no-repeat scroll 0 0 transparent;
+    margin: 5px;
     border: none;
 }
 
@@ -49,12 +50,14 @@
     height: 64px;
     width: 64px;
     background: url("../public/LinkedInLogo.png") no-repeat scroll 0 0 transparent;
+    margin: 5px;
     border: none;
 }
 .GHLogo {
     height: 64px;
     width: 64px;
     background: url("../public/GitHubLogo.png") no-repeat scroll 0 0 transparent;
+    margin: 5px;
     border: none;
 }
 
@@ -67,15 +70,18 @@
 
 .Bio-content {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+}
+
+.Bio-item {
+    margin: 15px;
 }
 
 .Bio-PFP {
     border-radius: 50%;
-    height: 20vh;
-    width: 20vh;
+    height: 30vh;
+    width: 30vh;
     border-style: solid;
     border-width: 5px;
     border-color: #207567;
@@ -90,6 +96,7 @@
 
 .fadeIn {
     opacity: 1;
+    width: 50vh;
     transition: width 0.5s, height 0.5s, opacity 0.5s 0.5s;
 }
 
