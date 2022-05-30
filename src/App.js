@@ -20,7 +20,7 @@ class App extends Component {
                     </div>
                     <div className="header-button">
                         <Link className="header-button" to="Intro" spy={true} smooth={true}>Intro</Link>
-                        <Link className="header-button" to="Bio" spy={true} smooth={true}>Bio</Link>
+                        <Link className="header-button" to="Bio" spy={true} smooth={true}>About</Link>
                         <Link className="header-button" to="Education" spy={true} smooth={true}>Education</Link>
                         <Link className="header-button" to="Resume" spy={true} smooth={true}>Resume</Link>
                         <Link className="header-button" to="Portfolio" spy={true} smooth={true}>Portfolio</Link>
