@@ -36,6 +36,11 @@
     text-align: center;
 }
 
+.PFP {
+    height: 500px;
+    width: 500px;
+}
+
 .DLLogo {
     height: 64px;
     width: 64px;
@@ -60,18 +65,20 @@
 }
 
 .Bio {
+    display: flex;
+    flex-direction: column;
     background-color: #FEFBEA;
+    padding: 3vh;
 }
 
 .Bio-content {
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-flow: row wrap;
+    align-items: center;
 }
 
 .Bio-item {
-    margin: 25px;
+    margin: 25px;<a style={{ color: "#00008B" }} 
 }
 
 .Bio-PFP {
@@ -93,7 +100,6 @@
 .fadeIn {
     opacity: 1;
     width: 50vh;
-    margin-left: 15px;
     transition: width 0.15s, height 0.15s, opacity 0.15s 0.15s;
 }
 
