@@ -1,3 +1,4 @@
+/* Main App */
 .App {
     background-color: #B4D6C1;
     display: flex;
@@ -25,6 +26,7 @@
     padding-right: 1vh;
 }
 
+/* Intro Section */
 .Intro {
     display: flex;
     flex-direction: column;
@@ -36,6 +38,7 @@
     text-align: center;
 }
 
+/* About Section */
 .PFP {
     height: 500px;
     width: 500px;
@@ -64,23 +67,23 @@
     border: none;
 }
 
-.Bio {
+.About {
     background-color: #FEFBEA;
     padding: 3vh;
 }
 
-.Bio-content {
+.About-content {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
     align-items: center;
 }
 
-.Bio-item {
+.About-item {
     margin: 25px;
 }
 
-.Bio-PFP {
+.About-PFP {
     border-radius: 50%;
     height: 30vh;
     width: 30vh;
@@ -102,6 +105,8 @@
     transition: width 0.15s, height 0.15s, opacity 0.15s 0.15s;
 }
 
+/* Resume Section */
+
 .Resume {
     display: flex;
     flex-direction: row;
@@ -119,6 +124,8 @@
     display: flex;
     flex-direction: row;
 }
+
+/* Footer Section */
 
 .Footer {
     display: flex;

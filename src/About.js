@@ -33,9 +33,9 @@ class About extends Component {
     
     render() {
         return (
-            <div className="Bio">
-                <div className="Bio-content">
-                    <div className="Bio-item">
+            <div className="About">
+                <div className="About-content">
+                    <div className="About-item">
                         <h2>About Me</h2>
                         <h5>Name:</h5>
                         <p>Ronan Wolfe</p>
@@ -46,10 +46,10 @@ class About extends Component {
                         <button title="Link to my GitHub" className="GHLogo" onClick={this.Redirect.bind(this, "https://github.com/RonanGW")}></button>
                         <button title="Link to my LinkedIn" className="LILogo" onClick={this.Redirect.bind(this, "https://www.linkedin.com/in/ronan-wolfe/")}></button>
                     </div>
-                    <div className="Bio-item">
-                        <img src="pfp.jpg" className="Bio-PFP" />
+                    <div className="About-item">
+                        <img src="pfp.jpg" className="About-PFP" />
                     </div>
-                    <div className="Bio-item">
+                    <div className="About-item">
                         <div className={this.state.highlights ? 'fadeIn' : 'fadeOut'}>
                             <h3>My Story</h3>
                             <p> I'm an aspiring software engineer with the experience to back up that dream. I grew up in Los Angeles where I took an interest in
@@ -64,11 +64,11 @@ class About extends Component {
                         <div style={window.innerWidth < 675 ? { marginLeft: "85px" } : {} } className={this.state.highlights ? 'fadeOut' : 'fadeIn'}>
                             <h3>The Highlights</h3>
                             <ul>
-                                <li style={{ paddingBottom: "15px" }}>Software Engineer</li>
+                                <li style={{ paddingBottom: "15px" }}>Full Stack Software Engineer</li>
                                 <li style={{ paddingBottom: "15px" }}>Data Scientist</li>
-                                <li style={{ paddingBottom: "15px" }}>Biotech</li>
+                                <li style={{ paddingBottom: "15px" }}>Abouttech</li>
                                 <li style={{ paddingBottom: "15px" }}>IT</li>
-                                <li style={{ paddingBottom: "15px" }}>Conservation</li>
+                                <li style={{ paddingBottom: "15px" }}>Wildlife Conservation</li>
                             </ul>
                             <a style={{ color: "#00008B" }} onClick={this.handleFade}>Read My Story>></a>
                         </div>
