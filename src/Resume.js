@@ -16,8 +16,14 @@ class Resume extends Component {
                                         {/* Icon */}
                                         <h2>Research Intern</h2>
                                         <h3>Kalamazoo College</h3>
-                                        <p>July 2021-December 2021</p>
-                                        <p>Kalamazoo, MI</p>
+                                        <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                                            <img style={{ width: "20px", height: "20px" }} src="./Calendar.png" />
+                                            <p>July 2021-December 2021</p>
+                                        </div>
+                                        <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                                            <img style={{ width: "16px", height: "20px" }} src="./LocPin.png" />
+                                            <p>Kalamazoo, MI</p>
+                                        </div>
                                     </div>
                                     <div>
                                         <ul>
@@ -39,9 +45,12 @@ class Resume extends Component {
                                         {/* Icon */}
                                         <h2>Intake Specialist</h2>
                                         <h3>Sourcewise</h3>
-                                        <p>April 2021-July 2021</p>
-                                        <div>
-                                            {/*Location Pin Icon*/}
+                                        <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                                            <img style={{ width: "20px", height: "20px" }} src="./Calendar.png" />
+                                            <p>April 2021-July 2021</p>
+                                        </div>
+                                        <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                                            <img style={{ width: "16px", height: "20px" }} src="./LocPin.png" />
                                             <p>Santa Clara County, CA</p>
                                         </div>
                                     </div>
@@ -62,9 +71,12 @@ class Resume extends Component {
                                         {/* Icon */}
                                         <h2>Help Desk Specialist</h2>
                                         <h3>Kalamazoo College</h3>
-                                        <p>September 2018-April 2021</p>
-                                        <div>
-                                            {/*Location Pin Icon*/}
+                                        <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                                            <img style={{ width: "20px", height: "20px" }} src="./Calendar.png" />
+                                            <p>September 2018-April 2021</p>
+                                        </div>
+                                        <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                                            <img style={{ width: "16px", height: "20px" }} src="./LocPin.png" />
                                             <p>Kalamazoo, MI</p>
                                         </div>
                                     </div>
@@ -90,9 +102,12 @@ class Resume extends Component {
                                         {/* Icon */}
                                         <h2>Zookeeper</h2>
                                         <h3>Los Angeles Zoo and Botanical Gardens</h3>
-                                        <p>August 2017 - June 2018</p>
-                                        <div>
-                                            {/*Location Pin Icon*/}
+                                        <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                                            <img style={{ width: "20px", height: "20px" }} src="./Calendar.png" />
+                                            <p>August 2017 - June 2018</p>
+                                        </div>
+                                        <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                                            <img style={{ width: "16px", height: "20px" }} src="./LocPin.png" />
                                             <p>Los Angeles, CA</p>
                                         </div>
                                     </div>
@@ -112,9 +127,12 @@ class Resume extends Component {
                                         {/* Icon */}
                                         <h2>Business Manager</h2>
                                         <h3>North Hollywood High School Zoo Magnet</h3>
-                                        <p>September 2017 - June 2018</p>
-                                        <div>
-                                            {/*Location Pin Icon*/}
+                                        <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                                            <img style={{ width: "20px", height: "20px" }} src="./Calendar.png" />
+                                            <p>September 2017 - June 2018</p>
+                                        </div>
+                                        <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                                            <img style={{ width: "16px", height: "20px" }} src="./LocPin.png" />
                                             <p>Los Angeles, CA</p>
                                         </div>
                                     </div>
@@ -144,8 +162,14 @@ class Resume extends Component {
                                         {/* Icon */}
                                         <h2>Kalamazoo College</h2>
                                         <h3>Bachelor's Computer Science</h3>
-                                        <p>September 2018-March 2022</p>
-                                        <p>Kalamazoo, MI</p>
+                                        <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                                            <img style={{ width: "20px", height: "20px" }} src="./Calendar.png" />
+                                            <p>September 2018-March 2022</p>
+                                        </div>
+                                        <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                                            <img style={{ width: "16px", height: "20px" }} src="./LocPin.png" />
+                                            <p>Kalamazoo, MI</p>
+                                        </div>
                                     </div>
                                     <div>
                                         <p>
@@ -161,9 +185,12 @@ class Resume extends Component {
                                         <h2>Zoo Magnet</h2>
                                         <h3>North Hollywood High School Biological Sciences Magnet</h3>
                                         <h3>High School Diploma</h3>
-                                        <p>September 2014-June 2018</p>
-                                        <div>
-                                            {/*Location Pin Icon*/}
+                                        <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                                            <img style={{ width: "20px", height: "20px" }} src="./Calendar.png" />
+                                            <p>September 2014-June 2018</p>
+                                        </div>
+                                        <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                                            <img style={{ width: "16px", height: "20px" }} src="./LocPin.png" />
                                             <p>Los Angeles, CA</p>
                                         </div>
                                     </div>
