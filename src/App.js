@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-scroll'
 import './App.css';
 import Intro from './Intro.js';
-import Bio from './Bio.js';
-import Education from './Education.js';
+import About from './About.js';
 import Resume from './Resume.js';
 import Footer from './Footer.js';
 import Portfolio from './Portfolio.js';
@@ -28,8 +27,7 @@ class App extends Component {
                     </div>
                 </header>
                 <Intro/>
-                <Bio />
-                <Education />
+                <About />
                 <Resume />
                 <Portfolio />
                 <Testimonials />

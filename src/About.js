@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { saveAs } from "file-saver";
 import './App.css';
 
-class Bio extends Component {
+class About extends Component {
 
     constructor(props) {
         super(props);
@@ -79,4 +79,4 @@ class Bio extends Component {
     }
 }
 
-export default Bio;
+export default About;

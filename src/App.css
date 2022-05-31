@@ -102,6 +102,19 @@
     transition: width 0.15s, height 0.15s, opacity 0.15s 0.15s;
 }
 
+.Resume {
+    display: flex;
+    flex-direction: row;
+}
+
+.Resume-section {
+    padding: 5vh;
+}
+
+.JobDesc {
+
+}
+
 .SchoolDesc {
     display: flex;
     flex-direction: row;
