@@ -113,16 +113,31 @@
 }
 
 .Resume-section {
-    padding: 5vh;
+    padding: 10vh;
 }
 
 .JobDesc {
-
+    display: flex;
+    align-content: flex-start;
+    padding: 5vh;
+    padding-right: 0vh;
 }
 
 .SchoolDesc {
     display: flex;
     flex-direction: row;
+}
+
+.VerticalLine {
+    border-left: 3px black solid;
+    width: 3px;
+    padding-right: 10px;
+}
+
+.LogoPhrase {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 /* Footer Section */

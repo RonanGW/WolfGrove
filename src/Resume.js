@@ -12,21 +12,22 @@ class Resume extends Component {
                             <img src="./LeafWalls.png" />
                                 <div>
                                 <div className="JobDesc">
-                                    <div>
+                                    <div style={{textAlign: "center", paddingRight: "10px"}}>
                                         <h2>Research Intern</h2>
-                                        <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                                        <div className="LogoPhrase">
                                             <img style={{ width: "32px", height: "32px" }} src="./KIcon.png" />
                                             <h3>Kalamazoo College</h3>
                                         </div>
-                                        <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                                        <div className="LogoPhrase">
                                             <img style={{ width: "20px", height: "20px" }} src="./Calendar.png" />
                                             <p>July 2021-December 2021</p>
                                         </div>
-                                        <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                                        <div className="LogoPhrase">
                                             <img style={{ width: "16px", height: "20px" }} src="./LocPin.png" />
                                             <p>Kalamazoo, MI</p>
                                         </div>
                                     </div>
+                                    <div className="VerticalLine" />
                                     <div>
                                         <ul>
                                             <li style={{ paddingBottom: "15px" }}>(The project) provided specialized algorithm with time-improvements upwards of 900%</li>
@@ -43,21 +44,22 @@ class Resume extends Component {
                                     </div>
                                 </div>
                                 <div className="JobDesc">
-                                    <div>
+                                    <div style={{ textAlign: "center", paddingRight: "10px" }}>
                                         <h2>Intake Specialist</h2>
-                                        <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                                        <div className="LogoPhrase">
                                             <img style={{ width: "32px", height: "32px" }} src="./SourcewiseIcon.png" />
                                             <h3>Sourcewise</h3>
                                         </div>
-                                        <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                                        <div className="LogoPhrase">
                                             <img style={{ width: "20px", height: "20px" }} src="./Calendar.png" />
                                             <p>April 2021-July 2021</p>
                                         </div>
-                                        <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                                        <div className="LogoPhrase">
                                             <img style={{ width: "16px", height: "20px" }} src="./LocPin.png" />
                                             <p>Santa Clara County, CA</p>
                                         </div>
                                     </div>
+                                    <div className="VerticalLine" />
                                     <div>
                                         <ul>
                                             <li style={{ paddingBottom: "15px" }}>Spearheaded Google Speaker Program Enrollment. (Technological assistance for the senior population)</li>
@@ -71,21 +73,22 @@ class Resume extends Component {
                                     </div>
                                 </div>
                                 <div className="JobDesc">
-                                    <div>
+                                    <div style={{ textAlign: "center", paddingRight: "10px" }}>
                                         <h2>Help Desk Specialist</h2>
-                                        <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                                        <div className="LogoPhrase">
                                             <img style={{ width: "32px", height: "32px" }} src="./KIcon.png" />
                                             <h3>Kalamazoo College</h3>
                                         </div>
-                                        <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                                        <div className="LogoPhrase">
                                             <img style={{ width: "20px", height: "20px" }} src="./Calendar.png" />
                                             <p>September 2018-April 2021</p>
                                         </div>
-                                        <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                                        <div className="LogoPhrase">
                                             <img style={{ width: "16px", height: "20px" }} src="./LocPin.png" />
                                             <p>Kalamazoo, MI</p>
                                         </div>
                                     </div>
+                                    <div className="VerticalLine" />
                                     <div>
                                         <ul>
                                             <li style={{ paddingBottom: "15px" }}>Monitored end-user requests for assistance and provided appropriate support</li>
@@ -104,21 +107,22 @@ class Resume extends Component {
                                     </div>
                                 </div>
                                 <div className="JobDesc">
-                                    <div>
+                                    <div style={{ textAlign: "center", paddingRight: "10px" }}>
                                         <h2>Zookeeper</h2>
-                                        <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                                        <div className="LogoPhrase">
                                             <img style={{ width: "32px", height: "32px" }} src="./ZooMagIcon.jpg" />
                                             <h3>North Hollywood High School Biological Sciences Magnet</h3>
                                         </div>
-                                        <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                                        <div className="LogoPhrase">
                                             <img style={{ width: "20px", height: "20px" }} src="./Calendar.png" />
                                             <p>August 2017 - June 2018</p>
                                         </div>
-                                        <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                                        <div className="LogoPhrase">
                                             <img style={{ width: "16px", height: "20px" }} src="./LocPin.png" />
                                             <p>Los Angeles, CA</p>
                                         </div>
                                     </div>
+                                    <div className="VerticalLine" />
                                     <div>
                                         <ul>
                                             <li style={{ paddingBottom: "15px" }}>Assisted the zookeepers with daily activities</li>
@@ -131,21 +135,22 @@ class Resume extends Component {
                                     </div>
                                 </div>
                                 <div className="JobDesc">
-                                    <div>
+                                    <div style={{ textAlign: "center", paddingRight: "10px" }}>
                                         <h2>Business Manager</h2>
-                                        <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                                        <div className="LogoPhrase">
                                             <img style={{ width: "32px", height: "32px" }} src="./ZooMagIcon.jpg" />
                                             <h3>North Hollywood High School Biological Sciences Magnet</h3>
                                         </div>
-                                        <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                                        <div className="LogoPhrase">
                                             <img style={{ width: "20px", height: "20px" }} src="./Calendar.png" />
                                             <p>September 2017 - June 2018</p>
                                         </div>
-                                        <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                                        <div className="LogoPhrase">
                                             <img style={{ width: "16px", height: "20px" }} src="./LocPin.png" />
                                             <p>Los Angeles, CA</p>
                                         </div>
                                     </div>
+                                    <div className="VerticalLine" />
                                     <div>
                                         <ul>
                                             <li style={{ paddingBottom: "15px" }}>Researched, planned, and created a campus store for the Biological Sciences Magnet School</li>
@@ -168,21 +173,22 @@ class Resume extends Component {
                             <img src="./LeafWalls.png" />
                             <div>
                                 <div className="SchoolDesc">
-                                    <div>
-                                        <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                                    <div style={{ textAlign: "center", paddingRight: "10px" }} >
+                                        <div className="LogoPhrase">
                                             <img style={{ width: "64px", height: "64px" }} src="./KIcon.png" />
                                             <h2>Kalamazoo College</h2>
                                         </div>
                                         <h3>Bachelor's Computer Science</h3>
-                                        <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                                        <div className="LogoPhrase">
                                             <img style={{ width: "20px", height: "20px" }} src="./Calendar.png" />
                                             <p>September 2018-March 2022</p>
                                         </div>
-                                        <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                                        <div className="LogoPhrase">
                                             <img style={{ width: "16px", height: "20px" }} src="./LocPin.png" />
                                             <p>Kalamazoo, MI</p>
                                         </div>
                                     </div>
+                                    <div className="VerticalLine" />
                                     <div>
                                         <p>
                                             Graduated cum laude. Alongside my major in computer science, I also completed a minor in Japanese and every core class the biology major requires.
@@ -192,22 +198,23 @@ class Resume extends Component {
                                     </div>
                                 </div>
                                 <div className="SchoolDesc">
-                                    <div>
-                                        <h2>Zoo Magnet</h2>
-                                        <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                                    <div style={{ textAlign: "center", paddingRight: "30px" }}>
+                                        <div className="LogoPhrase">
                                             <img style={{ width: "64px", height: "64px" }} src="./ZooMagIcon.jpg" />
-                                            <h2>North Hollywood High School Biological Sciences Magnet</h2>
+                                            <h2>Zoo Magnet</h2>
                                         </div>
+                                        <h2>North Hollywood High School Biological Sciences Magnet</h2>
                                         <h3>High School Diploma</h3>
-                                        <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                                        <div className="LogoPhrase">
                                             <img style={{ width: "20px", height: "20px" }} src="./Calendar.png" />
                                             <p>September 2014-June 2018</p>
                                         </div>
-                                        <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                                        <div className="LogoPhrase">
                                             <img style={{ width: "16px", height: "20px" }} src="./LocPin.png" />
                                             <p>Los Angeles, CA</p>
                                         </div>
                                     </div>
+                                    <div className="VerticalLine" />
                                     <div>
                                         <p>
                                             The Biological Sciences Magnet, colloquially known as the Zoo Magnet, is a unit of North Hollywood High located at the Los Angeles Zoo. Courses were heavily STEM focused and were frequently conducted at the Los Angleles Zoo.
