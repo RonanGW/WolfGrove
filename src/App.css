@@ -69,14 +69,19 @@
 
 .About {
     background-color: #FEFBEA;
-    padding: 3vh;
+    padding: 10vh;
+}
+
+.About-Left {
+    width: 58%;
+    display: flex;
+    justify-content: end;
+    flex-flow: row wrap;
 }
 
 .About-content {
     display: flex;
-    justify-content: center;
     flex-flow: row wrap;
-    align-items: center;
 }
 
 .About-item {
@@ -110,6 +115,7 @@
 .Resume {
     display: flex;
     flex-direction: row;
+    flex-flow: row wrap;
 }
 
 .Resume-section {
@@ -150,6 +156,34 @@
 .DescPhrase {
     text-align: left;
     width: 40vh;
+}
+
+/* Portfolio Section */
+
+.Portfolio {
+    padding: 10vh;
+    background-color: #FEFBEA;
+}
+.Portfolio-Content {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-flow: row wrap;
+}
+
+.Project-Button-Container {
+    width: 80vh;
+    height: 20vh;
+}
+
+.Project-Button {
+    width: 75vh;
+    height: 15vh;
+    background-color: #207567;
+    border: 0px;
+    font-size: 30px;
+    color: azure;
 }
 
 /* Footer Section */

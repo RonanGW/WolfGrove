@@ -35,19 +35,21 @@ class About extends Component {
         return (
             <div className="About">
                 <div className="About-content">
-                    <div className="About-item">
-                        <h2>About Me</h2>
-                        <h5>Name:</h5>
-                        <p>Ronan Wolfe</p>
-                        <h5>Area:</h5>
-                        <p>San Fracisco, Bay Area, CA</p>
-                        <h5>Links:</h5>
-                        <button title="Download my Resume" className="DLLogo" onClick={this.DownloadResume}></button>
-                        <button title="Link to my GitHub" className="GHLogo" onClick={this.Redirect.bind(this, "https://github.com/RonanGW")}></button>
-                        <button title="Link to my LinkedIn" className="LILogo" onClick={this.Redirect.bind(this, "https://www.linkedin.com/in/ronan-wolfe/")}></button>
-                    </div>
-                    <div className="About-item">
-                        <img src="pfp.jpg" className="About-PFP" />
+                    <div className="About-Left">
+                        <div className="About-item">
+                            <h1>About Me</h1>
+                            <h5>Name:</h5>
+                            <p>Ronan Wolfe</p>
+                            <h5>Area:</h5>
+                            <p>San Fracisco, Bay Area, CA</p>
+                            <h5>Links:</h5>
+                            <button title="Download my Resume" className="DLLogo" onClick={this.DownloadResume}></button>
+                            <button title="Link to my GitHub" className="GHLogo" onClick={this.Redirect.bind(this, "https://github.com/RonanGW")}></button>
+                            <button title="Link to my LinkedIn" className="LILogo" onClick={this.Redirect.bind(this, "https://www.linkedin.com/in/ronan-wolfe/")}></button>
+                        </div>
+                        <div className="About-item">
+                            <img src="pfp.jpg" className="About-PFP" />
+                        </div>
                     </div>
                     <div className="About-item">
                         <div className={this.state.highlights ? 'fadeIn' : 'fadeOut'}>

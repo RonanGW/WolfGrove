@@ -7,7 +7,7 @@ class Resume extends Component {
             <div className="Resume">
                 <div className="Resume-section">
                     <div>
-                        <h2>Experience</h2>
+                        <h1>Experience</h1>
                         <div style={{ display: "flex", flexDirection: "row" }}>
                             <img src="./LeafWalls.png" />
                                 <div>
@@ -168,7 +168,7 @@ class Resume extends Component {
                 </div>
                 <div className="Resume-section">
                     <div>
-                        <h2>Education</h2>
+                        <h1>Education</h1>
                         <div style={{ display: "flex", flexDirection: "row" }}>
                             <img src="./LeafWalls.png" />
                             <div>

@@ -10,12 +10,21 @@ class Portfolio extends Component {
     render() {
         return (
             <div className="Portfolio">
-                <h2>Portfolio</h2>
-                <p>I will be making custom descriptions for these projects in time, but at the moment these are links to all my biggest projects of professional nature (i.e not game dev)</p>
-                <button onClick={this.Redirect.bind(this, "")}>This page!</button>
-                <button onClick={this.Redirect.bind(this, "https://github.com/pcdslab/PHYNGSD")}>PhyNGSD</button>
-                <button onClick={this.Redirect.bind(this, "https://github.com/langstonhowley/seminar-webpage")}>Bio-Loss</button>
-                <button onClick={this.Redirect.bind(this, "https://github.com/GenesisMM/TIPO")}>TIPO</button>
+                <h1>Portfolio</h1>
+                <div className="Portfolio-Content">
+                    <div className="Project-Button-Container" >
+                        <button className="Project-Button" onClick={this.Redirect.bind(this, "")}>WolfGrove</button>
+                    </div>
+                    <div className="Project-Button-Container" >
+                        <button className="Project-Button" style={{ backgroundColor: "#18191A" }} onClick={this.Redirect.bind(this, "https://github.com/pcdslab/PHYNGSD")}>PhyNGSD</button>
+                    </div>
+                    <div className="Project-Button-Container" >
+                        <button className="Project-Button" onClick={this.Redirect.bind(this, "https://github.com/langstonhowley/seminar-webpage")}>Bio-Loss</button>
+                    </div>
+                    <div className="Project-Button-Container" >
+                        <button className="Project-Button" style={{ backgroundColor: "#DFEAE2", color: "#18191A" }} onClick={this.Redirect.bind(this, "https://github.com/GenesisMM/TIPO")}>TIPO</button>
+                    </div>
+                </div>
             </div>
         );
     }
