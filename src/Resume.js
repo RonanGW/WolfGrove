@@ -13,7 +13,7 @@ class Resume extends Component {
                                 <div>
                                 <div className="JobDesc">
                                     <div className="TitlePhrase">
-                                        <h2>Research Intern</h2>
+                                        <h2>Software Development Intern</h2>
                                         <div className="LogoPhrase">
                                             <img style={{ width: "32px", height: "32px" }} src="./KIcon.png" />
                                             <h3>Kalamazoo College</h3>
