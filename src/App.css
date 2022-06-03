@@ -120,6 +120,7 @@
 
 .Resume-section {
     padding: 10vh;
+    padding-left: 15vh;
 }
 
 .JobDesc {
@@ -173,21 +174,41 @@
 }
 
 .Project-Button-Container {
-    width: 80vh;
-    height: 20vh;
+    padding: 5vh;
 }
 
 .Project-Button {
     width: 75vh;
     height: 15vh;
     background-color: #207567;
-    border: 0px;
     font-size: 30px;
     color: azure;
+    border: solid 5px #207567;
+}
+
+.openButton {
+    display: flex;
+    justify-content: center;
+}
+
+.closeButton {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.buttonDesc {
+    width: 74vh;
+    background-color: #B4D6C1;
+    box-sizing: border-box;
+    border: solid 5px #207567;
+    border-top: 0px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    padding: 5px
 }
 
 /* Footer Section */
-
 .Footer {
     display: flex;
     justify-content: space-between;

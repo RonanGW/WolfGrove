@@ -56,7 +56,7 @@ class Resume extends Component {
                                         </div>
                                         <div className="LogoPhrase">
                                             <img style={{ width: "16px", height: "20px" }} src="./LocPin.png" />
-                                            <p>Santa Clara County, CA</p>
+                                            <p>Santa Clara<br />County, CA</p>
                                         </div>
                                     </div>
                                     <div className="VerticalLine" />
@@ -178,7 +178,7 @@ class Resume extends Component {
                                             <img style={{ width: "64px", height: "64px" }} src="./KIcon.png" />
                                             <h2>Kalamazoo College</h2>
                                         </div>
-                                        <h3>Bachelor's Computer Science</h3>
+                                        <h3>Bachelor's of<br />Computer Science</h3>
                                         <div className="LogoPhrase">
                                             <img style={{ width: "20px", height: "20px" }} src="./Calendar.png" />
                                             <p>September 2018-<br />March 2022</p>
