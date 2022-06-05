@@ -208,6 +208,11 @@
     padding: 5px
 }
 
+/* Testimonials Section */
+
+.Testimonials {
+    padding: 10vh;
+}
 /* Footer Section */
 .Footer {
     display: flex;
