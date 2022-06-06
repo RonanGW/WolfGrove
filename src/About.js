@@ -30,7 +30,7 @@ class About extends Component {
         );
     };
 
-    /*s Direct to another page */
+    /* Direct to another page */
     Redirect = (link) => {
         window.location.assign(link);
     }
@@ -40,7 +40,9 @@ class About extends Component {
         return (
             <div className="About">
                 <div className="About-content">
+                    {/* Personal info and PFP */}
                     <div className="About-Left">
+                        {/* Personal info */}
                         <div className="About-item">
                             <h1>About Me</h1>
                             <h5>Name:</h5>
@@ -52,11 +54,14 @@ class About extends Component {
                             <button title="Link to my GitHub" className="GHLogo" onClick={this.Redirect.bind(this, "https://github.com/RonanGW")}></button>
                             <button title="Link to my LinkedIn" className="LILogo" onClick={this.Redirect.bind(this, "https://www.linkedin.com/in/ronan-wolfe/")}></button>
                         </div>
+                        {/* PFP */}
                         <div className="About-item">
                             <img src="pfp.jpg" className="About-PFP" />
                         </div>
                     </div>
+                    {/* Swapping highlights and story sections */}
                     <div className="About-item">
+                        {/* My story Section */}
                         <div className={this.state.highlights ? 'fadeIn' : 'fadeOut'}>
                             <h3>My Story</h3>
                             <p> I'm an aspiring software engineer with the experience to back up that dream. I grew up in Los Angeles where I took an interest in
@@ -68,6 +73,7 @@ class About extends Component {
                             </p>
                             <a style={{ color: "#00008B" }} onClick={this.handleFade}>Read The Highlights>></a>
                         </div>
+                        {/* Highlights section */}
                         <div style={window.innerWidth < 675 ? { marginLeft: "85px" } : {} } className={this.state.highlights ? 'fadeOut' : 'fadeIn'}>
                             <h3>The Highlights</h3>
                             <ul>

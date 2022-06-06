@@ -5,13 +5,18 @@ class Resume extends Component {
     render() {
         return (
             <div className="Resume">
+                {/* Work Experience Section */}
                 <div className="Resume-section">
                     <div>
+                        {/* Section header */}
                         <h1>Experience</h1>
                         <div style={{ display: "flex", flexDirection: "row" }}>
+                            {/* Styled item bullet points*/}
                             <img src="./LeafWalls.png" />
-                                <div>
+                            <div>
+                                {/* Research Job */}
                                 <div className="JobDesc">
+                                    {/* Left side details */}
                                     <div className="TitlePhrase">
                                         <h2>Software Development Intern</h2>
                                         <div className="LogoPhrase">
@@ -27,7 +32,9 @@ class Resume extends Component {
                                             <p>Kalamazoo, MI</p>
                                         </div>
                                     </div>
+                                    {/* Divider */}
                                     <div className="VerticalLine" />
+                                    {/* Right side description */}
                                     <div>
                                         <ul>
                                             <li className="DescPhrase" style={{ paddingBottom: "15px" }}>(The project) provided specialized algorithm with time-improvements upwards of 900%</li>
@@ -43,7 +50,9 @@ class Resume extends Component {
                                         </p>
                                     </div>
                                 </div>
+                                {/* Call Center Job */}
                                 <div className="JobDesc">
+                                    {/* Left side details */}
                                     <div className="TitlePhrase">
                                         <h2>Intake Specialist</h2>
                                         <div className="LogoPhrase">
@@ -59,7 +68,9 @@ class Resume extends Component {
                                             <p>Santa Clara<br />County, CA</p>
                                         </div>
                                     </div>
+                                    {/* Divider */}
                                     <div className="VerticalLine" />
+                                    {/* Right side description */}
                                     <div>
                                         <ul>
                                             <li className="DescPhrase" style={{ paddingBottom: "15px" }}>Spearheaded Google Speaker Program Enrollment. (Technological assistance for the senior population)</li>
@@ -72,7 +83,9 @@ class Resume extends Component {
                                         </p>
                                     </div>
                                 </div>
+                                {/* Help Desk Job */}
                                 <div className="JobDesc">
+                                    {/* Left side details */}
                                     <div className="TitlePhrase">
                                         <h2>Help Desk Specialist</h2>
                                         <div className="LogoPhrase">
@@ -88,8 +101,10 @@ class Resume extends Component {
                                             <p>Kalamazoo, MI</p>
                                         </div>
                                     </div>
+                                    {/* Divider */}
                                     <div className="VerticalLine" />
                                     <div>
+                                        {/* Left side details */}
                                         <ul>
                                             <li className="DescPhrase" style={{ paddingBottom: "15px" }}>Monitored end-user requests for assistance and provided appropriate support</li>
                                             <li className="DescPhrase" style={{ paddingBottom: "15px" }}>Created, changed, and deleted user accounts</li>
@@ -106,7 +121,9 @@ class Resume extends Component {
                                         </ul>
                                     </div>
                                 </div>
+                                {/* Zookeeping Job */}
                                 <div className="JobDesc">
+                                    {/* Left side details */}
                                     <div className="TitlePhrase">
                                         <h2>Zookeeper</h2>
                                         <div className="LogoPhrase">
@@ -122,7 +139,9 @@ class Resume extends Component {
                                             <p>Los Angeles, CA</p>
                                         </div>
                                     </div>
+                                    {/* Divider */}
                                     <div className="VerticalLine" />
+                                    {/* Right side description */}
                                     <div>
                                         <ul>
                                             <li className="DescPhrase" style={{ paddingBottom: "15px" }}>Assisted the zookeepers with daily activities</li>
@@ -134,7 +153,9 @@ class Resume extends Component {
                                         </ul>
                                     </div>
                                 </div>
+                                {/* Student Store Job */}
                                 <div className="JobDesc">
+                                    {/* Left side details */}
                                     <div className="TitlePhrase">
                                         <h2>Business Manager</h2>
                                         <div className="LogoPhrase">
@@ -150,7 +171,9 @@ class Resume extends Component {
                                             <p>Los Angeles, CA</p>
                                         </div>
                                     </div>
+                                    {/* Divider */}
                                     <div className="VerticalLine" />
+                                    {/* Right side description */}
                                     <div>
                                         <ul>
                                             <li className="DescPhrase" style={{ paddingBottom: "15px" }}>Researched, planned, and created a campus store for the Biological Sciences Magnet School</li>
@@ -166,13 +189,18 @@ class Resume extends Component {
                         </div>
                     </div>
                 </div>
+                {/* Education section */}
                 <div className="Resume-section">
                     <div>
+                        {/* Section header */}
                         <h1>Education</h1>
                         <div style={{ display: "flex", flexDirection: "row" }}>
+                            {/* Styled item bullet points*/}
                             <img src="./LeafWalls.png" />
                             <div>
+                                {/* College Undergrad */}
                                 <div className="SchoolDesc">
+                                    {/* Left side details */}
                                     <div className="TitlePhrase">
                                         <div className="LogoPhrase">
                                             <img style={{ width: "64px", height: "64px" }} src="./KIcon.png" />
@@ -188,7 +216,9 @@ class Resume extends Component {
                                             <p>Kalamazoo, MI</p>
                                         </div>
                                     </div>
+                                    {/* Divider */}
                                     <div className="VerticalLine" />
+                                    {/* Right side description */}
                                     <div>
                                         <p className="DescPhrase">
                                             Graduated cum laude. Alongside my major in computer science, I also completed a minor in Japanese and every core class the biology major requires.
@@ -197,7 +227,9 @@ class Resume extends Component {
                                         </p>
                                     </div>
                                 </div>
+                                {/* High School */}
                                 <div className="SchoolDesc">
+                                    {/* Left side details */}
                                     <div className="TitlePhrase">
                                         <div className="LogoPhrase">
                                             <img style={{ width: "64px", height: "64px" }} src="./ZooMagIcon.jpg" />
@@ -213,7 +245,9 @@ class Resume extends Component {
                                             <p>Los Angeles, CA</p>
                                         </div>
                                     </div>
+                                    {/* Divider */}
                                     <div className="VerticalLine" />
+                                    {/* Right side description */}
                                     <div>
                                         <p className="DescPhrase">
                                             The Biological Sciences Magnet, colloquially known as the Zoo Magnet, is a unit of North Hollywood High located at the Los Angeles Zoo. Courses were heavily STEM focused and were frequently conducted at the Los Angleles Zoo.

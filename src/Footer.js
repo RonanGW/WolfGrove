@@ -3,6 +3,7 @@ import './App.css';
 
 class Footer extends Component {
 
+    /* Direct to another page */
     Redirect = (link) => {
         window.location.assign(link);
     }
@@ -11,10 +12,12 @@ class Footer extends Component {
         return (
             <div className="Footer">
                 <div className="Footer-cols">
+                    {/* Contact Blurb */}
                     <div className="Contact-Footnote">
                         <h3>Contact Details</h3>
                         <p>Email: ronangwolfe@gmail.com</p>
                     </div>
+                    {/* Social Links */}
                     <div className="Contact-Footnote">
                         <h3>Socials</h3>
                         <div>
