@@ -12,6 +12,7 @@ class App extends Component {
     render() {
         return (
             <div className="App">
+                {/* Header Bar */}
                 <header className="App-header">
                     <div>
                         <h1>WolfGrove</h1>
@@ -25,6 +26,7 @@ class App extends Component {
                         <Link className="header-button" to="Testimonials" spy={true} smooth={true}>Testimonials</Link>
                     </div>
                 </header>
+                {/* Section Components */}
                 <Intro/>
                 <About />
                 <Resume />

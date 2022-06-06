@@ -3,7 +3,8 @@ import { saveAs } from "file-saver";
 import './App.css';
 
 class About extends Component {
-
+    
+    /* Default Constructor for About section */
     constructor(props) {
         super(props);
 
@@ -13,6 +14,7 @@ class About extends Component {
         };
     }
 
+    /* Handle swap between highlights and story sections */
     handleFade = () => {
         // Update our state here...
         this.setState({
@@ -20,6 +22,7 @@ class About extends Component {
         })
     };
 
+    /* Function for download resume button */
     DownloadResume = () => {
         saveAs(
             "./RonanWolfe_Resume.pdf",
@@ -27,10 +30,12 @@ class About extends Component {
         );
     };
 
+    /*s Direct to another page */
     Redirect = (link) => {
         window.location.assign(link);
     }
-    
+
+    /* About Display */
     render() {
         return (
             <div className="About">

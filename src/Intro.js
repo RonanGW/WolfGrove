@@ -5,6 +5,7 @@ class Intro extends Component {
     render() {
         return (
             <div className="Intro">
+                {/* Likely temporary Work in Progress Notice */}
                 <h1>Welcome!</h1>
                 <h3>Important Note</h3>
                 <p> Welcome to my site. It's in it's infancy at the moment, but I intend to for this to be catch all location for everything me! That means this'll be a big project,
