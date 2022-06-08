@@ -46,7 +46,12 @@ class Portfolio extends Component {
         return (
             <div className="Portfolio">
                 {/* Section header */}
-                <h1>Portfolio</h1>
+                <div style={{ display: "flex", justifyContent: "center" }}>
+                    <div style={{ display: "flex", alignItems: "center", flexDirection: "column", fontSize: "25px"}}>
+                        <h1>Portfolio</h1>
+                        <div className="HorizontalLine" />
+                    </div>
+                </div>
                 <div className="Portfolio-Content">
                     {/* Project 1*/}
                     <div className="Project-Button-Container" >
@@ -71,6 +76,12 @@ class Portfolio extends Component {
                         <div className={this.state.projects[1] ? 'openButton' : 'closeButton'}>
                             <div className="buttonDesc" >
                                 <h3>PhyNGSD</h3>
+                                <p>This is the project my software development internship was focused on. It is a highly
+                                    scalable parallel compression algorithm for Omic Big Data. It is primarily coded with
+                                    C++, but also OpenMP, MPI & CUDA as well as multithreading and supercomputing. The
+                                    Github link to the decompression algorithm (the section I mainly worked with) is below
+
+                                </p>
                                 <button title="Link to my GitHub" className="GHLogo" onClick={this.Redirect.bind(this, "https://github.com/pcdslab/PHYNGSD")}></button>
                             </div>
                         </div>    

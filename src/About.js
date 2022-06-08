@@ -39,12 +39,18 @@ class About extends Component {
     render() {
         return (
             <div className="About">
+                <div style={{ display: "flex", justifyContent: "center" }}>
+                    <div style={{ display: "flex", alignItems: "center", flexDirection: "column", }}>
+                        <h1>About Me</h1>
+                        <div className="HorizontalLine" />
+                    </div>
+                </div>
                 <div className="About-content">
                     {/* Personal info and PFP */}
                     <div className="About-Left">
                         {/* Personal info */}
+                        <div style={{ display: "flex", flexDirection: "column", justifyContent: "center" }} >
                         <div className="About-item">
-                            <h1>About Me</h1>
                             <h5>Name:</h5>
                             <p>Ronan Wolfe</p>
                             <h5>Area:</h5>
@@ -53,9 +59,10 @@ class About extends Component {
                             <button title="Download my Resume" className="DLLogo" onClick={this.DownloadResume}></button>
                             <button title="Link to my GitHub" className="GHLogo" onClick={this.Redirect.bind(this, "https://github.com/RonanGW")}></button>
                             <button title="Link to my LinkedIn" className="LILogo" onClick={this.Redirect.bind(this, "https://www.linkedin.com/in/ronan-wolfe/")}></button>
+                            </div>
                         </div>
                         {/* PFP */}
-                        <div className="About-item">
+                        <div style={{ display: "flex", flexDirection: "column", justifyContent: "center" }} className="About-item">
                             <img src="pfp.jpg" className="About-PFP" />
                         </div>
                     </div>
@@ -79,7 +86,7 @@ class About extends Component {
                             <ul>
                                 <li style={{ paddingBottom: "15px" }}>Full Stack Software Engineer</li>
                                 <li style={{ paddingBottom: "15px" }}>Data Scientist</li>
-                                <li style={{ paddingBottom: "15px" }}>Abouttech</li>
+                                <li style={{ paddingBottom: "15px" }}>Biotechnology</li>
                                 <li style={{ paddingBottom: "15px" }}>IT</li>
                                 <li style={{ paddingBottom: "15px" }}>Wildlife Conservation</li>
                             </ul>

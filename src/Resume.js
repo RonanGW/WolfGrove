@@ -4,6 +4,13 @@ import './App.css';
 class Resume extends Component {
     render() {
         return (
+            <div className="Resume-container">
+                <div style={{ display: "flex", justifyContent: "center" }}>
+                    <div style={{ display: "flex", alignItems: "center", flexDirection: "column", fontSize: "25px"}}>
+                        <h1>Resume</h1>
+                        <div className="HorizontalLine" />
+                    </div>
+                </div>
             <div className="Resume">
                 {/* Work Experience Section */}
                 <div className="Resume-section">
@@ -222,7 +229,7 @@ class Resume extends Component {
                                     <div>
                                         <p className="DescPhrase">
                                             Graduated cum laude. Alongside my major in computer science, I also completed a minor in Japanese and every core class the biology major requires.
-
+                                            <br /><br />
                                             Extracirriculars: Treasurer and Co-founder of the Computer Science Society, Arboretum Trail Crew, Lion Dance & Taiko Performer.
                                         </p>
                                     </div>
@@ -251,7 +258,7 @@ class Resume extends Component {
                                     <div>
                                         <p className="DescPhrase">
                                             The Biological Sciences Magnet, colloquially known as the Zoo Magnet, is a unit of North Hollywood High located at the Los Angeles Zoo. Courses were heavily STEM focused and were frequently conducted at the Los Angleles Zoo.
-
+                                            <br/><br/>
                                             Extracirriculars: Student Leadership (Business Manager) & Zookeeping Internship.
                                         </p>
                                     </div>
@@ -260,7 +267,8 @@ class Resume extends Component {
                         </div>
                     </div>
                 </div>
-            </div>
+                </div>
+                </div>
         );
     }
 }

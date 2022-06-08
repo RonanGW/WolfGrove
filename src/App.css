@@ -41,9 +41,36 @@
 }
 
 /* About Section */
-.PFP {
-    height: 500px;
-    width: 500px;
+
+.About {
+    background-color: #FEFBEA;
+    padding: 10vh;
+    font-size: 25px;
+}
+
+.About-Left {
+    width: 58%;
+    display: flex;
+    justify-content: end;
+    flex-flow: row wrap;
+}
+
+.About-content {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.About-item {
+    margin: 1vw;
+}
+
+.About-PFP {
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #207567;
 }
 
 .DLLogo {
@@ -61,42 +88,13 @@
     margin: 5px;
     border: none;
 }
+
 .GHLogo {
     height: 64px;
     width: 64px;
     background: url("../public/GitHubLogo.png") no-repeat scroll 0 0 transparent;
     margin: 5px;
     border: none;
-}
-
-.About {
-    background-color: #FEFBEA;
-    padding: 10vh;
-}
-
-.About-Left {
-    width: 58%;
-    display: flex;
-    justify-content: end;
-    flex-flow: row wrap;
-}
-
-.About-content {
-    display: flex;
-    flex-flow: row wrap;
-}
-
-.About-item {
-    margin: 25px;
-}
-
-.About-PFP {
-    border-radius: 50%;
-    height: 30vh;
-    width: 30vh;
-    border-style: solid;
-    border-width: 5px;
-    border-color: #207567;
 }
 
 .fadeOut {
@@ -108,12 +106,21 @@
 
 .fadeIn {
     opacity: 1;
-    width: 50vh;
+    width: 32vw;
     transition: width 0.15s, height 0.15s, opacity 0.15s 0.15s;
+}
+
+.HorizontalLine {
+    border-top: 3px black solid;
+    width: 40vw;
 }
 
 /* Resume Section */
 
+.Resume-container {
+    font-size: 17px;
+    padding-top: 10vh;
+}
 .Resume {
     display: flex;
     flex-direction: row;
@@ -153,7 +160,7 @@
 .TitlePhrase {
     width: 20vh;
     text-align: right;
-    padding-right: 10px;
+    padding-right: 2vw;
 }
 
 .DescPhrase {
@@ -215,6 +222,7 @@
 
 .Testimonials {
     padding: 10vh;
+    font-size: 25px;
 }
 /* Footer Section */
 .Footer {
@@ -223,6 +231,7 @@
     background-color: #207567;
     color: #DFEAE2;
     position: relative;
+    font-size: 20px;
 }
 
 .Footer-cols {
