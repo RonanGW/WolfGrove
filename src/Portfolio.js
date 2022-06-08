@@ -93,6 +93,12 @@ class Portfolio extends Component {
                         <div className={this.state.projects[2] ? 'openButton' : 'closeButton'}>
                             <div className="buttonDesc" >
                                 <h3>Bio-Loss</h3>
+                                <p>This was a project I started as a final for one of my senior year courses. This project
+                                    was meant to be an proof of concept display for an interactive educational webpage for any audience
+                                    that quantifies Biodiversity loss per country as a way of explaining how severe the issue is. 
+                                    This project involved guiding several novice to creates the different aspects of the project.
+                                    I intend to improve the code, but the current code is available below.
+                                </p>
                                 <button title="Link to my GitHub" className="GHLogo" onClick={this.Redirect.bind(this, "https://github.com/langstonhowley/seminar-webpage")}></button>
                             </div>
                         </div>    
@@ -104,6 +110,10 @@ class Portfolio extends Component {
                         <div className={this.state.projects[3] ? 'openButton' : 'closeButton'}>
                             <div className="buttonDesc" >
                                 <h3>TIPO</h3>
+                                <p>This is a project I started with a friend as a way to introduce programming to her.
+                                    It's meant to be a simple local project manager/to-do list. The source code is viewable
+                                    at the link below.
+                                </p>
                                 <button title="Link to my GitHub" className="GHLogo" onClick={this.Redirect.bind(this, "https://github.com/GenesisMM/TIPO")}></button>
                             </div>
                         </div>    
