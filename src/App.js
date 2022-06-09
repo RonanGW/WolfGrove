@@ -9,7 +9,6 @@ import Portfolio from './Portfolio.js';
 import Testimonials from './Testimonials.js';
 
 class App extends Component {
-
     render() {
         return (
             <div className="App">
