@@ -10,6 +10,14 @@ import Testimonials from './Testimonials.js';
 
 class App extends Component {
     render() {
+
+        //const ref = useRef();
+        //const inViewport = useIntersection(ref, '0px'); // Trigger as soon as the element becomes visible
+
+        //if (inViewport) {
+        //    console.log('in viewport:', ref.current);
+        //}
+
         return (
             <div className="App">
                 {/* Header Bar */}

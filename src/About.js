@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { saveAs } from "file-saver";
+import VisibilitySensor from 'react-visibility-sensor';
 import './App.css';
 
 class About extends Component {
@@ -11,6 +12,7 @@ class About extends Component {
         // Define the initial state:
         this.state = {
             highlights: false,
+            visibility: false
         };
     }
 
@@ -35,17 +37,29 @@ class About extends Component {
         window.location.assign(link);
     }
 
+    isInViewport = (x, y) => {
+        console.log("Viewport Width: " + document.documentElement.clientWidth + " px");
+        console.log("Viewport Height: " + document.documentElement.clientHeight + " px");
+        //const item = document.querySelector('About');
+        //console.log("Viewport Width: " + item.getBoundingClientRect().y + " px");
+    }
+
     /* About Display */
     render() {
         return (
-            <div className="About">
+            <div onClick={ this.isInViewport(0,0) } id="test" className="About">
                 <div style={{ display: "flex", justifyContent: "center" }}>
                     <div style={{ display: "flex", alignItems: "center", flexDirection: "column", }}>
                         <h1>About Me</h1>
                         <div className="HorizontalLine" />
                     </div>
                 </div>
-                <div className="About-content">
+                <VisibilitySensor
+                    onChange={(isVisible) => {
+                        this.setState({ visibility: isVisible })
+                    }}
+                >
+                    <div style={{ transition: this.state.visibility ? "" : "width 7s 7s, height 7s 7s, opacity 7s" }} className="About-content">
                     {/* Personal info and PFP */}
                     <div className="About-Left">
                         {/* Personal info */}
@@ -94,6 +108,7 @@ class About extends Component {
                         </div>
                     </div>
                 </div>
+                </VisibilitySensor>
             </div>
         );
     }
