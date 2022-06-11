@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-scroll'
+import ScrollAnimation from 'react-animate-on-scroll';
+import "animate.css/animate.min.css";
 import './App.css';
 import Intro from './Intro.js';
 import About from './About.js';

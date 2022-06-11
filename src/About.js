@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { saveAs } from "file-saver";
-import VisibilitySensor from 'react-visibility-sensor';
+import ScrollAnimation from 'react-animate-on-scroll';
+import "animate.css/animate.min.css";
 import './App.css';
 
 class About extends Component {
@@ -47,18 +48,13 @@ class About extends Component {
     /* About Display */
     render() {
         return (
-            <div onClick={ this.isInViewport(0,0) } id="test" className="About">
+            <div className="About">
                 <div style={{ display: "flex", justifyContent: "center" }}>
                     <div style={{ display: "flex", alignItems: "center", flexDirection: "column", }}>
                         <h1>About Me</h1>
                         <div className="HorizontalLine" />
                     </div>
                 </div>
-                <VisibilitySensor
-                    onChange={(isVisible) => {
-                        this.setState({ visibility: isVisible })
-                    }}
-                >
                     <div style={{ transition: this.state.visibility ? "" : "width 7s 7s, height 7s 7s, opacity 7s" }} className="About-content">
                     {/* Personal info and PFP */}
                     <div className="About-Left">
@@ -76,14 +72,16 @@ class About extends Component {
                             </div>
                         </div>
                         {/* PFP */}
+                        <ScrollAnimation animateIn="fadeIn">
                         <div style={{ display: "flex", flexDirection: "column", justifyContent: "center" }} className="About-item">
                             <img src="pfp.jpg" className="About-PFP" />
-                        </div>
+                            </div>
+                        </ScrollAnimation>
                     </div>
                     {/* Swapping highlights and story sections */}
                     <div className="About-item">
                         {/* My story Section */}
-                        <div className={this.state.highlights ? 'fadeIn' : 'fadeOut'}>
+                        <div className={this.state.highlights ? 'fadeInHighlights' : 'fadeOutHighlights'}>
                             <h3>My Story</h3>
                             <p> I'm an aspiring software engineer with the experience to back up that dream. I grew up in Los Angeles where I took an interest in
                                 the life sciences, working as a zookeeper and frequently volunteering for conservation projects. Since 2018 I have traveled
@@ -95,7 +93,7 @@ class About extends Component {
                             <a style={{ color: "#00008B" }} onClick={this.handleFade}>Read The Highlights>></a>
                         </div>
                         {/* Highlights section */}
-                        <div style={window.innerWidth < 675 ? { marginLeft: "85px" } : {} } className={this.state.highlights ? 'fadeOut' : 'fadeIn'}>
+                            <div style={window.innerWidth < 675 ? { marginLeft: "85px" } : {}} className={this.state.highlights ? 'fadeOutHighlights' : 'fadeInHighlights'}>
                             <h3>The Highlights</h3>
                             <ul>
                                 <li style={{ paddingBottom: "15px" }}>Full Stack Software Engineer</li>
@@ -108,7 +106,6 @@ class About extends Component {
                         </div>
                     </div>
                 </div>
-                </VisibilitySensor>
             </div>
         );
     }
