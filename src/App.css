@@ -107,11 +107,13 @@
 .fadeInHighlights {
     opacity: 1;
     width: 32vw;
-    transition: width 0.15s, height 0.15s, opacity 0.15s 0.15s;
+    animation: fadeInRight;
+    animation-duration: 1s;
 }
 
 .fadeIn {
-    transition: width 0.15s, height 0.15s, opacity 0.15s 0.15s;
+    animation: fadeInRight;
+    animation-duration: 2s;
 }
 
 .HorizontalLine {

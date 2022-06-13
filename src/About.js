@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { saveAs } from "file-saver";
 import ScrollAnimation from 'react-animate-on-scroll';
-import "animate.css/animate.min.css";
+import "animate.css";
 import './App.css';
 
 class About extends Component {
@@ -55,6 +55,7 @@ class About extends Component {
                         <div className="HorizontalLine" />
                     </div>
                 </div>
+                {/*<ScrollAnimation animateIn="fadeIn">*/}
                     <div style={{ transition: this.state.visibility ? "" : "width 7s 7s, height 7s 7s, opacity 7s" }} className="About-content">
                     {/* Personal info and PFP */}
                     <div className="About-Left">
@@ -72,23 +73,21 @@ class About extends Component {
                             </div>
                         </div>
                         {/* PFP */}
-                        <ScrollAnimation animateIn="fadeIn">
                         <div style={{ display: "flex", flexDirection: "column", justifyContent: "center" }} className="About-item">
                             <img src="pfp.jpg" className="About-PFP" />
-                            </div>
-                        </ScrollAnimation>
+                        </div>
                     </div>
                     {/* Swapping highlights and story sections */}
                     <div className="About-item">
                         {/* My story Section */}
                         <div className={this.state.highlights ? 'fadeInHighlights' : 'fadeOutHighlights'}>
                             <h3>My Story</h3>
-                            <p> I'm an aspiring software engineer with the experience to back up that dream. I grew up in Los Angeles where I took an interest in
-                                the life sciences, working as a zookeeper and frequently volunteering for conservation projects. Since 2018 I have traveled
-                                around the country and gone to college. I've met people of all kinds and lived in the biggest cities, small towns and everything in
-                                between. Feeling well-rounded, I am excitedly building the foundation for a career for myself. I've earned my Bachelor's of Computer Science
-                                of which I graduated early cum laude from Kalamazoo College as well as worked in compression algorithm development research to both learn more
-                                and prove my aptitude.
+                            <p> words :/{/*I'm a software engineer with the experience to back up that dream. I grew up in Los Angeles where I took an interest in*/}
+                            {/*    the life sciences, working as a zookeeper and frequently volunteering for conservation projects. Since 2018 I have traveled*/}
+                            {/*    around the country and gone to college. I've met people of all kinds and lived in the biggest cities, small towns and everything in*/}
+                            {/*    between. Feeling well-rounded, I am excitedly building the foundation for a career for myself. I've earned my Bachelor's of Computer Science*/}
+                            {/*    of which I graduated early cum laude from Kalamazoo College as well as worked in compression algorithm development research to both learn more*/}
+                            {/*    and prove my aptitude.*/}
                             </p>
                             <a style={{ color: "#00008B" }} onClick={this.handleFade}>Read The Highlights>></a>
                         </div>
@@ -105,7 +104,8 @@ class About extends Component {
                             <a style={{ color: "#00008B" }} onClick={this.handleFade}>Read My Story>></a>
                         </div>
                     </div>
-                </div>
+                    </div>
+                {/*</ScrollAnimation>*/}
             </div>
         );
     }
