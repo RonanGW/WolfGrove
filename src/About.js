@@ -38,15 +38,13 @@ class About extends Component {
         window.location.assign(link);
     }
 
-    isInViewport = (x, y) => {
-        console.log("Viewport Width: " + document.documentElement.clientWidth + " px");
-        console.log("Viewport Height: " + document.documentElement.clientHeight + " px");
-        //const item = document.querySelector('About');
-        //console.log("Viewport Width: " + item.getBoundingClientRect().y + " px");
-    }
-
     /* About Display */
     render() {
+
+        if (this.props.data) {
+            var name = this.props.data.name;
+        }
+
         return (
             <div className="About">
                 <div style={{ display: "flex", justifyContent: "center" }}>
@@ -63,7 +61,7 @@ class About extends Component {
                         <div style={{ display: "flex", flexDirection: "column", justifyContent: "center" }} >
                         <div className="About-item">
                             <h5>Name:</h5>
-                            <p>Ronan Wolfe</p>
+                            <p>{name}</p>
                             <h5>Area:</h5>
                             <p>San Fracisco, Bay Area, CA</p>
                             <h5>Links:</h5>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-scroll'
-import ScrollAnimation from 'react-animate-on-scroll';
+import ReactGA from 'react-ga';
+import $ from 'jquery';
 import "animate.css/animate.min.css";
 import './App.css';
 import Intro from './Intro.js';
@@ -8,18 +9,43 @@ import About from './About.js';
 import Resume from './Resume.js';
 import Footer from './Footer.js';
 import Portfolio from './Portfolio.js';
+import Skills from './Skills.js';
 import Testimonials from './Testimonials.js';
 
 class App extends Component {
+
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            resumeData: {}
+        };
+
+        ReactGA.initialize('UA-110570651-1');
+        ReactGA.pageview(window.location.pathname);
+
+    }
+
+    getResumeData() {
+        $.ajax({
+            url: 'resumeData.json',
+            dataType: 'json',
+            cache: false,
+            success: function (data) {
+                this.setState({ resumeData: data });
+            }.bind(this),
+            error: function (xhr, status, err) {
+                console.log(err);
+                //alert(err);
+            }
+        });
+    }
+
+    componentDidMount() {
+        this.getResumeData();
+    }
+
     render() {
-
-        //const ref = useRef();
-        //const inViewport = useIntersection(ref, '0px'); // Trigger as soon as the element becomes visible
-
-        //if (inViewport) {
-        //    console.log('in viewport:', ref.current);
-        //}
-
         return (
             <div className="App">
                 {/* Header Bar */}
@@ -33,15 +59,17 @@ class App extends Component {
                         <Link className="header-button" to="About" spy={true} smooth={true} offset={-95}>About</Link>
                         <Link className="header-button" to="Resume" spy={true} smooth={true}>Resume</Link>
                         <Link className="header-button" to="Portfolio" spy={true} smooth={true}>Portfolio</Link>
+                        <Link className="header-button" to="Skills" spy={true} smooth={true}>Skills</Link>
                         <Link className="header-button" to="Testimonials" spy={true} smooth={true}>Testimonials</Link>
                     </div>
                 </header>
                 {/* Section Components */}
                 <Intro />
-                <About />
+                <About data={this.state.resumeData.main} />
                 <Resume />
                 <Portfolio />
                 <Testimonials />
+                <Skills />
                 <Footer />
             </div>
         );
