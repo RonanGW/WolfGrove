@@ -14,7 +14,6 @@ import Testimonials from './Testimonials.js';
 
 class App extends Component {
 
-
     constructor(props) {
         super(props);
         this.state = {
@@ -23,7 +22,6 @@ class App extends Component {
 
         ReactGA.initialize('UA-110570651-1');
         ReactGA.pageview(window.location.pathname);
-
     }
 
     getResumeData() {
@@ -59,8 +57,8 @@ class App extends Component {
                         <Link className="header-button" to="About" spy={true} smooth={true} offset={-95}>About</Link>
                         <Link className="header-button" to="Resume" spy={true} smooth={true}>Resume</Link>
                         <Link className="header-button" to="Portfolio" spy={true} smooth={true}>Portfolio</Link>
-                        <Link className="header-button" to="Skills" spy={true} smooth={true}>Skills</Link>
                         <Link className="header-button" to="Testimonials" spy={true} smooth={true}>Testimonials</Link>
+                        <Link className="header-button" to="skills" spy={true} smooth={true}>Skills</Link>
                     </div>
                 </header>
                 {/* Section Components */}
@@ -69,7 +67,7 @@ class App extends Component {
                 <Resume />
                 <Portfolio />
                 <Testimonials />
-                <Skills />
+                <Skills data={this.state.resumeData.resume} />
                 <Footer />
             </div>
         );
