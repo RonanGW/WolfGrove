@@ -45,9 +45,8 @@ class Portfolio extends Component {
     render() {
         return (
             <div className="Portfolio">
-                {/* Section header */}
-                <div style={{ display: "flex", justifyContent: "center" }}>
-                    <div style={{ display: "flex", alignItems: "center", flexDirection: "column", fontSize: "25px"}}>
+                <div className="Section-Header">
+                    <div className="Section-Header-Alignment">
                         <h1>Portfolio</h1>
                         <div className="HorizontalLine" />
                     </div>

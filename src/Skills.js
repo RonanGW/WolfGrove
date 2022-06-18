@@ -19,8 +19,8 @@ class Skills extends Component {
 
         return (
             <div style={{ display: "flex", flexDirection: "column" }}>
-                <div style={{ display: "flex", justifyContent: "center" }}>
-                    <div style={{ display: "flex", alignItems: "center", flexDirection: "column", }}>
+                <div className="Section-Header">
+                    <div className="Section-Header-Alignment">
                         <h1>Skills</h1>
                         <div className="HorizontalLine" />
                     </div>

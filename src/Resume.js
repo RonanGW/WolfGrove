@@ -3,10 +3,46 @@ import './App.css';
 
 class Resume extends Component {
     render() {
+
+        if (this.props.data) {
+            var education = this.props.data.education.map(function (education) {
+                var date = education.startDate + '-<br />' + education.startDate;
+                return <div className="SchoolDesc">
+                        {/* Left side details */}
+                        <div className="TitlePhrase">
+                            <div className="LogoPhrase">
+                            <img style={{ width: "64px", height: "64px" }} src={education.icon} />
+                            <h2>{education.school}</h2>
+                            </div>
+                            <h3>{education.degree}</h3>
+                            <div className="LogoPhrase">
+                                <img style={{ width: "20px", height: "20px" }} src="./Calendar.png" />
+                                <p>{date}</p>
+                            </div>
+                            <div className="LogoPhrase">
+                                <img style={{ width: "16px", height: "20px" }} src="./LocPin.png" />
+                            <p>{education.location}</p>
+                            </div>
+                            </div>
+                            {/* Divider */}
+                            <div className="VerticalLine" />
+                            {/* Right side description */}
+                            <div>
+                                <p className="DescPhrase">
+                                   {education.description}
+                                </p>
+                            </div>
+                        </div>
+            })
+            var jobs = this.props.data.work.map(function (work) {
+
+            })
+        }
+
         return (
             <div className="Resume-container">
-                <div style={{ display: "flex", justifyContent: "center" }}>
-                    <div style={{ display: "flex", alignItems: "center", flexDirection: "column", fontSize: "25px"}}>
+                <div className="Section-Header">
+                    <div className="Section-Header-Alignment">
                         <h1>Resume</h1>
                         <div className="HorizontalLine" />
                     </div>
@@ -194,65 +230,8 @@ class Resume extends Component {
                             <div style={{ display: "flex", flexDirection: "row" }}>
                                 {/* Styled item bullet points*/}
                                 <img src="./LeafWalls.png" />
-                                <div>
-                                    {/* College Undergrad */}
-                                    <div className="SchoolDesc">
-                                        {/* Left side details */}
-                                        <div className="TitlePhrase">
-                                            <div className="LogoPhrase">
-                                                <img style={{ width: "64px", height: "64px" }} src="./KIcon.png" />
-                                                <h2>Kalamazoo College</h2>
-                                            </div>
-                                            <h3>Bachelor's of<br />Computer Science</h3>
-                                            <div className="LogoPhrase">
-                                                <img style={{ width: "20px", height: "20px" }} src="./Calendar.png" />
-                                                <p>September 2018-<br />March 2022</p>
-                                            </div>
-                                            <div className="LogoPhrase">
-                                                <img style={{ width: "16px", height: "20px" }} src="./LocPin.png" />
-                                                <p>Kalamazoo, MI</p>
-                                            </div>
-                                        </div>
-                                        {/* Divider */}
-                                        <div className="VerticalLine" />
-                                        {/* Right side description */}
-                                        <div>
-                                            <p className="DescPhrase">
-                                                Graduated cum laude. Alongside my major in computer science, I also completed a minor in Japanese and every core class the biology major requires.
-                                                <br /><br />
-                                                Extracirriculars: Treasurer and Co-founder of the Computer Science Society, Arboretum Trail Crew, Lion Dance & Taiko Performer.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    {/* High School */}
-                                    <div className="SchoolDesc">
-                                        {/* Left side details */}
-                                        <div className="TitlePhrase">
-                                            <div className="LogoPhrase">
-                                                <img style={{ width: "64px", height: "64px" }} src="./ZooMagIcon.jpg" />
-                                                <h2>Zoo Magnet</h2>
-                                            </div>
-                                            <h3>High School Diploma</h3>
-                                            <div className="LogoPhrase">
-                                                <img style={{ width: "20px", height: "20px" }} src="./Calendar.png" />
-                                                <p>September 2014-<br />June 2018</p>
-                                            </div>
-                                            <div className="LogoPhrase">
-                                                <img style={{ width: "16px", height: "20px" }} src="./LocPin.png" />
-                                                <p>Los Angeles, CA</p>
-                                            </div>
-                                        </div>
-                                        {/* Divider */}
-                                        <div className="VerticalLine" />
-                                        {/* Right side description */}
-                                        <div>
-                                            <p className="DescPhrase">
-                                                The Biological Sciences Magnet, colloquially known as the Zoo Magnet, is a unit of North Hollywood High located at the Los Angeles Zoo. Courses were heavily STEM focused and were frequently conducted at the Los Angleles Zoo.
-                                                <br/><br/>
-                                                Extracirriculars: Student Leadership (Business Manager) & Zookeeping Internship.
-                                            </p>
-                                        </div>
-                                    </div>
+                                <div style={{ display: "flex", flexDirection: "column" }}>
+                                {education}
                                 </div>
                             </div>
                         </div>

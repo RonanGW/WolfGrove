@@ -28,6 +28,18 @@
     padding-right: 1vh;
 }
 
+.Section-Header {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.Section-Header-Alignment {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 /* Intro Section */
 .Intro {
     display: flex;
@@ -73,12 +85,34 @@
     border-color: #207567;
 }
 
+.Interests-Button {
+    background-color: #207567;
+    background-image: linear-gradient(#207067, #207567);
+    border: 1px solid #2A8387;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    font-size: 20px;
+    line-height: 100%;
+    margin: 0;
+    outline: 0;
+    padding: 11px 15px 12px;
+    text-align: center;
+    transition: box-shadow .05s ease-in-out,opacity .05s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
 .DLLogo {
     height: 64px;
     width: 64px;
     background: url("../public/DownloadIcon.png") no-repeat scroll 0 0 transparent;
     margin: 5px;
     border: none;
+    cursor: pointer;
 }
 
 .LILogo {
@@ -87,6 +121,7 @@
     background: url("../public/LinkedInLogo.png") no-repeat scroll 0 0 transparent;
     margin: 5px;
     border: none;
+    cursor: pointer;
 }
 
 .GHLogo {
@@ -95,16 +130,17 @@
     background: url("../public/GitHubLogo.png") no-repeat scroll 0 0 transparent;
     margin: 5px;
     border: none;
+    cursor: pointer;
 }
 
-.fadeOutHighlights {
+.fadeOutInterests {
     opacity: 0;
     width: 0;
     height: 0;
     transition: width 0.15s 0.15s, height 0.15s 0.15s, opacity 0.15s;
 }
 
-.fadeInHighlights {
+.fadeInInterests {
     opacity: 1;
     width: 32vw;
     animation: fadeInRight;

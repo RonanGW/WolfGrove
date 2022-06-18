@@ -1,46 +1,24 @@
 {
   "main": {
     "name": "Ronan Wolfe",
-    "occupation": "Student",
-    "description": "Here will be your description. Use this to describe what you do or whatever you feel best describes yourself to a potential employer",
-    "image": "profilepic.jpg",
-    "bio": "Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
-    "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
-    "email": "youremailhere@gmail.com",
-    "phone": "555-555-5555",
+    "pfpurl": "pfp.jpg",
+    "bio": "words for bio :/",
+    "email": "ronangwolfe@gmail.com",
+    "phone": "(XXX) XXX-XXXX",
     "address": {
-      "street": "(Your Street)",
-      "city": "(Your City)",
-      "state": "(Your State)",
-      "zip": "(Your Zip/Postal Code)"
+      "city": "San Francisco, Bay Area",
+      "state": "CA"
     },
-    "website": "http://www.timbakerdev.com",
-    "resumedownload": "http://timbakerdev.com",
     "social": [
       {
-        "name": "facebook",
-        "url": "http://facebook.com/tim.baker.906",
-        "className": "fa fa-facebook"
+        "name": "GitHub",
+        "url": "https://github.com/RonanGW",
+        "className": "GHLogo"
       },
       {
-        "name": "twitter",
-        "url": "http://twitter.com",
-        "className": "fa fa-twitter"
-      },
-      {
-        "name": "linkedin",
-        "url": "https://www.linkedin.com/in/tim-baker-8420009a/",
-        "className": "fa fa-linkedin"
-      },
-      {
-        "name": "instagram",
-        "url": "http://instagram.com/tbaker_x",
-        "className": "fa fa-instagram"
-      },
-      {
-        "name": "github",
-        "url": "http://github.com/tbakerx",
-        "className": "fa fa-github"
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/ronan-wolfe/",
+        "className": "LILogo"
       }
     ]
   },
@@ -48,30 +26,51 @@
     "skillmessage": "Here you can create a short write-up of your skills to show off to employers",
     "education": [
       {
-        "school": "University?",
-        "degree": "Masters in Beer tasting",
-        "graduated": "April 2007",
-        "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "school": "Kalamazoo College",
+        "degree": "Bachelor's of 'Computer Science",
+        "startDate": "September 2018",
+        "endDate": "March 2022",
+        "location": "Kalamazoo, MI",
+        "icon": "./KIcon.png",
+        "description": "Graduated cum laude. Alongside my major in computer science, I also completed a minor in Japanese and every core class the biology major requires.<br /><br />Extracirriculars: Treasurer and Co-founder of the Computer Science Society, Arboretum Trail Crew, Lion Dance & Taiko Performer."
       },
       {
-        "school": "School #1 Maybe College?",
-        "degree": "What did you study 101",
-        "graduated": "March 2003",
-        "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "school": "Zoo Magnet",
+        "degree": "High School Diploma",
+        "startDate": "September 2014",
+        "endDate": "June 2018",
+        "location":  "Los Angeles, CA",
+        "description": "The Biological Sciences Magnet, colloquially known as the Zoo Magnet, is a unit of North Hollywood High located at the Los Angeles Zoo. Courses were heavily STEM focused and were frequently conducted at the Los Angleles Zoo.<br/><br/>Extracirriculars: Student Leadership (Business Manager) & Zookeeping Internship."
       }
     ],
     "work": [
       {
-        "company": "Awesome Design Studio",
-        "title": "Senior UX God ",
-        "years": "March 2010 - Present",
-        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "company": "Kalamazoo College",
+        "title": "Software Developmer Intern",
+        "startDate": "July 2021",
+        "endDate": "December 2021",
+        "location": "Kalamazoo, MI",
+        "description": "I  was invited by my Computer Science professor to participate in a research project where we developed a highly scaleable, parallel compression algorithm for Omic Big Data. We were able to achieve time complexity improvements upwards of 900%.<br /><br />Responsibilities Included:",
+        "tasks": [
+          "Reviewed, notated and refractored code throughout the entire project",
+          "Researched and determined optimal technologies",
+          "Added accessibility functions",
+          "Presented research at West Michigan Regional Undergraduate Science Research Conference"
+        ]
       },
       {
-        "company": "Super Cool Studio",
-        "title": "Junior bug fixer",
-        "years": "March 2007 - February 2010",
-        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "company": "Sourcewise",
+        "title": "Intake Specialist",
+        "startDate": "April 2021",
+        "endDate": "July 2021",
+        "location": "Santa Clara County, CA",
+        "description": "Served as point of contact for the Great Plates Delivered via phone. This program provided frozen food delivered to eligible clients' homes as a form of COVID relief.<br /><br />Responsibilities Included:",
+        "tasks": [
+          "Spearheaded Google Speaker Program Enrollment. (Technological assistance for the senior population)",
+          "Enrolled new participants in the Great Plates Delivered program",
+          "Served as point of contact for existing clients to resolve issues.",
+          "Create and update client information within database."
+        ]
       }
     ],
     "skills": [

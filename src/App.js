@@ -64,7 +64,7 @@ class App extends Component {
                 {/* Section Components */}
                 <Intro />
                 <About data={this.state.resumeData.main} />
-                <Resume />
+                <Resume data={this.state.resumeData.resume} />
                 <Portfolio />
                 <Testimonials />
                 <Skills data={this.state.resumeData.resume} />
