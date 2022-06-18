@@ -27,30 +27,34 @@
     "education": [
       {
         "school": "Kalamazoo College",
-        "degree": "Bachelor's of 'Computer Science",
+        "degree": "Bachelor's of Computer Science",
         "startDate": "September 2018",
         "endDate": "March 2022",
         "location": "Kalamazoo, MI",
         "icon": "./KIcon.png",
-        "description": "Graduated cum laude. Alongside my major in computer science, I also completed a minor in Japanese and every core class the biology major requires.<br /><br />Extracirriculars: Treasurer and Co-founder of the Computer Science Society, Arboretum Trail Crew, Lion Dance & Taiko Performer."
+        "description": "Graduated cum laude. Alongside my major in computer science, I also completed a minor in Japanese and every core class the biology major requires.",
+        "extracirriculars": "Treasurer and Co-founder of the Computer Science Society, Arboretum Trail Crew, Lion Dance & Taiko Performer."
       },
       {
         "school": "Zoo Magnet",
         "degree": "High School Diploma",
         "startDate": "September 2014",
         "endDate": "June 2018",
-        "location":  "Los Angeles, CA",
-        "description": "The Biological Sciences Magnet, colloquially known as the Zoo Magnet, is a unit of North Hollywood High located at the Los Angeles Zoo. Courses were heavily STEM focused and were frequently conducted at the Los Angleles Zoo.<br/><br/>Extracirriculars: Student Leadership (Business Manager) & Zookeeping Internship."
+        "location": "Los Angeles, CA",
+        "icon": "./ZooMagIcon.jpg",
+        "description": "The Biological Sciences Magnet, colloquially known as the Zoo Magnet, is a unit of North Hollywood High located at the Los Angeles Zoo. Courses were heavily STEM focused and were frequently conducted at the Los Angleles Zoo.",
+        "extracirriculars": "Student Leadership (Business Manager) & Zookeeping Internship."
       }
     ],
     "work": [
       {
         "company": "Kalamazoo College",
         "title": "Software Developmer Intern",
+        "icon": "./KIcon.png",
         "startDate": "July 2021",
         "endDate": "December 2021",
         "location": "Kalamazoo, MI",
-        "description": "I  was invited by my Computer Science professor to participate in a research project where we developed a highly scaleable, parallel compression algorithm for Omic Big Data. We were able to achieve time complexity improvements upwards of 900%.<br /><br />Responsibilities Included:",
+        "description": "I  was invited by my Computer Science professor to participate in a research project where we developed a highly scaleable, parallel compression algorithm for Omic Big Data. We were able to achieve time complexity improvements upwards of 900%.\n\nResponsibilities Included:",
         "tasks": [
           "Reviewed, notated and refractored code throughout the entire project",
           "Researched and determined optimal technologies",
@@ -61,15 +65,68 @@
       {
         "company": "Sourcewise",
         "title": "Intake Specialist",
+        "icon": "./SourcewiseIcon.png",
         "startDate": "April 2021",
         "endDate": "July 2021",
         "location": "Santa Clara County, CA",
-        "description": "Served as point of contact for the Great Plates Delivered via phone. This program provided frozen food delivered to eligible clients' homes as a form of COVID relief.<br /><br />Responsibilities Included:",
+        "description": "Served as point of contact for the Great Plates Delivered via phone. This program provided frozen food delivered to eligible clients' homes as a form of COVID relief.\n\nResponsibilities Included:",
         "tasks": [
           "Spearheaded Google Speaker Program Enrollment. (Technological assistance for the senior population)",
           "Enrolled new participants in the Great Plates Delivered program",
           "Served as point of contact for existing clients to resolve issues.",
           "Create and update client information within database."
+        ]
+      },
+      {
+        "company": "Kalamazoo College",
+        "title": "Help Desk Specialist",
+        "icon": "./KIcon.png",
+        "startDate": "September 2018",
+        "endDate": "April 2021",
+        "location": "Kalamazoo, MI",
+        "description": "Provided  IT support to Faculty and Student body on a variety of support issues including: ",
+        "tasks": [
+          "Monitoring end-user requests for assistance and providing appropriate support",
+          "Creating, changing, and deleting user accounts",
+          "Performing AV audits, ensuring equipment in facilities were fully functional",
+          "Deploying new or upgrading existing hardware & software for end-users",
+          "Responding to on-call requests",
+          "Providing IT support for PCs, printers, peripherals, telephone systems, and cellular devices",
+          "Supporting system security through OS and application patching, anti-virus support"
+        ]
+      },
+      {
+        "company": "Zoo Magnet",
+        "title": "Zookeeper",
+        "icon": "./ZooMagIcon.jpg",
+        "startDate": "August 2017",
+        "endDate": "June 2018",
+        "location": "Los Angeles, CA",
+        "description": "While attending Zoo Magnet High School, I participated in the Animal Husbandry Internship. I assisted the zookeepers with daily activities at the Los Angeles Zoo.\n\nSpecific responsibilities included:",
+        "tasks": [
+          "Overseeing hoof stock such as okapi, kudzu, bongos, as well as lions and ostriches, porcupines and more",
+          "Maintaining enclosures",
+          "Preparing meals",
+          "Maintaining detailed heath records",
+          "Ensuring their safety.",
+          "Educating guests"
+        ]
+      },
+      {
+        "company": "Zoo Magnet",
+        "title": "Business Manager",
+        "icon": "./ZooMagIcon.jpg",
+        "startDate": "September 2017",
+        "endDate": "June 2018",
+        "location": "Los Angeles, CA",
+        "description": "Researched, planned, and created a campus store for the North Hollywood Zoo Magnet School.\n\nAs Business Manager, my responsibilities included oversight of all:",
+        "tasks": [
+          "Sales",
+          "Inventory",
+          "Staffing",
+          "Finance",
+          "Suppliers",
+          "Adhering to LAUSD food regulation requirements."
         ]
       }
     ],

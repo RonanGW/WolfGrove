@@ -6,7 +6,9 @@ class Resume extends Component {
 
         if (this.props.data) {
             var education = this.props.data.education.map(function (education) {
-                var date = education.startDate + '-<br />' + education.startDate;
+                var date = education.startDate + "-\n" + education.endDate;
+                var description = education.description + "\n\nExtracirriculars: " + education.extracirriculars;
+                var desc = description.split('\n').map(str => <p>{str}</p>);
                 return <div className="SchoolDesc">
                         {/* Left side details */}
                         <div className="TitlePhrase">
@@ -29,13 +31,43 @@ class Resume extends Component {
                             {/* Right side description */}
                             <div>
                                 <p className="DescPhrase">
-                                   {education.description}
+                                   {desc}
                                 </p>
                             </div>
                         </div>
             })
             var jobs = this.props.data.work.map(function (work) {
-
+                var date = work.startDate + '-\n' + work.endDate;
+                var description = work.description + '\n\n';
+                var desc = description.split('\n').map(str => <p>{str}</p>);
+                var tasks = work.tasks.map(function (task) {
+                    return <li className="DescPhrase" style={{ paddingBottom: "15px", width: "14vw" }}>{task}</li>
+                });
+                return <div className="JobDesc">
+                        {/* Left side details */}
+                        <div className="TitlePhrase">
+                            <h2>{work.title}</h2>
+                            <div className="LogoPhrase">
+                                <img style={{ width: "32px", height: "32px" }} src={work.icon} />
+                                <h3>{work.company}</h3>
+                            </div>
+                            <div className="LogoPhrase">
+                                <img style={{ width: "20px", height: "20px" }} src="./Calendar.png" />
+                                <p>{date}</p>
+                            </div>
+                            <div className="LogoPhrase">
+                                <img style={{ width: "16px", height: "20px" }} src="./LocPin.png" />
+                                <p>{work.location}</p>
+                            </div>
+                        </div>
+                        {/* Divider */}
+                        <div className="VerticalLine" />
+                        {/* Right side description */}
+                        <div className="DescPhrase">
+                            <p>{desc}</p>
+                            <ul>{tasks}</ul>
+                        </div>
+                    </div>
             })
         }
 
@@ -56,169 +88,7 @@ class Resume extends Component {
                             <div style={{ display: "flex", flexDirection: "row" }}>
                                 {/* Styled item bullet points*/}
                                 <img src="./LeafWalls.png" />
-                                <div>
-                                    {/* Research Job */}
-                                    <div className="JobDesc">
-                                        {/* Left side details */}
-                                        <div className="TitlePhrase">
-                                            <h2>Software Development Intern</h2>
-                                            <div className="LogoPhrase">
-                                                <img style={{ width: "32px", height: "32px" }} src="./KIcon.png" />
-                                                <h3>Kalamazoo College</h3>
-                                            </div>
-                                            <div className="LogoPhrase">
-                                                <img style={{ width: "20px", height: "20px" }} src="./Calendar.png" />
-                                                <p>July 2021-<br />December 2021</p>
-                                            </div>
-                                            <div className="LogoPhrase">
-                                                <img style={{ width: "16px", height: "20px" }} src="./LocPin.png" />
-                                                <p>Kalamazoo, MI</p>
-                                            </div>
-                                        </div>
-                                        {/* Divider */}
-                                        <div className="VerticalLine" />
-                                        {/* Right side description */}
-                                        <div className="DescPhrase">
-                                            <p>
-                                                I  was invited by my Computer Science professor to participate in a research project where we developed a highly scaleable, parallel compression algorithm for Omic Big Data. We were able to achieve time complexity improvements upwards of 900%.
-                                                <br /><br />
-                                                Responsibilities Included:
-                                            </p>
-                                            <ul>
-                                                <li className="DescPhrase" style={{ paddingBottom: "15px", width: "14vw" }}>Reviewed, notated and refractored code throughout the entire project</li>
-                                                <li className="DescPhrase" style={{ paddingBottom: "15px", width: "14vw" }}>Researched and determined optimal technologies</li>
-                                                <li className="DescPhrase" style={{ paddingBottom: "15px", width: "14vw" }}>Added accessibility functions</li>
-                                                <li className="DescPhrase" style={{ paddingBottom: "15px", width: "14vw" }}>Presented research at West Michigan Regional Undergraduate Science Research Conference</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    {/* Call Center Job */}
-                                    <div className="JobDesc">
-                                        {/* Left side details */}
-                                        <div className="TitlePhrase">
-                                            <h2>Intake Specialist</h2>
-                                            <div className="LogoPhrase">
-                                                <img style={{ width: "32px", height: "32px" }} src="./SourcewiseIcon.png" />
-                                                <h3>Sourcewise</h3>
-                                            </div>
-                                            <div className="LogoPhrase">
-                                                <img style={{ width: "20px", height: "20px" }} src="./Calendar.png" />
-                                                <p>April 2021-<br />July 2021</p>
-                                            </div>
-                                            <div className="LogoPhrase">
-                                                <img style={{ width: "16px", height: "20px" }} src="./LocPin.png" />
-                                                <p>Santa Clara<br />County, CA</p>
-                                            </div>
-                                        </div>
-                                        {/* Divider */}
-                                        <div className="VerticalLine" />
-                                        {/* Right side description */}
-                                        <div className="DescPhrase">
-                                            <p>
-                                                Served as point of contact for the Great Plates Delivered via phone. This program provided frozen food delivered to eligible clients' homes as a form of COVID relief.
-                                            </p>
-                                            <ul>
-                                                <li className="DescPhrase" style={{ paddingBottom: "15px", width: "14vw" }}>Spearheaded Google Speaker Program Enrollment. (Technological assistance for the senior population)</li>
-                                                <li className="DescPhrase" style={{ paddingBottom: "15px", width: "14vw" }}>Enrolled new participants in the Great Plates Delivered program</li>
-                                                <li className="DescPhrase" style={{ paddingBottom: "15px", width: "14vw" }}>Served as point of contact for existing clients to resolve issues.</li>
-                                                <li className="DescPhrase" style={{ paddingBottom: "15px", width: "14vw" }}>Create and update client information within database.</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    {/* Help Desk Job */}
-                                    <div className="JobDesc">
-                                        {/* Left side details */}
-                                        <div className="TitlePhrase">
-                                            <h2>Help Desk Specialist</h2>
-                                            <div className="LogoPhrase">
-                                                <img style={{ width: "32px", height: "32px" }} src="./KIcon.png" />
-                                                <h3>Kalamazoo College</h3>
-                                            </div>
-                                            <div className="LogoPhrase">
-                                                <img style={{ width: "20px", height: "20px" }} src="./Calendar.png" />
-                                                <p>September 2018-<br />April 2021</p>
-                                            </div>
-                                            <div className="LogoPhrase">
-                                                <img style={{ width: "16px", height: "20px" }} src="./LocPin.png" />
-                                                <p>Kalamazoo, MI</p>
-                                            </div>
-                                        </div>
-                                        {/* Divider */}
-                                        <div className="VerticalLine" />
-                                        <div className="DescPhrase">
-                                            {/* Left side details */}
-                                            <p>
-                                                Provided  IT support to Faculty and Student body on a variety of support issues including: 
-                                            </p>
-                                            <ul>
-                                                <li className="DescPhrase" style={{ paddingBottom: "15px", width: "14vw" }}>Monitoring end-user requests for assistance and providing appropriate support </li>
-                                                <li className="DescPhrase" style={{ paddingBottom: "15px", width: "14vw" }}>Creating, changing, and deleting user accounts</li>
-                                                <li className="DescPhrase" style={{ paddingBottom: "15px", width: "14vw" }}>Performing AV audits, ensuring equipment in facilities were fully functional</li>
-                                                <li className="DescPhrase" style={{ paddingBottom: "15px", width: "14vw" }}>Deploying new or upgrading existing hardware & software for end-users</li>
-                                                <li className="DescPhrase" style={{ paddingBottom: "15px", width: "14vw" }}>Responding to on-call requests</li>
-                                                <li className="DescPhrase" style={{ paddingBottom: "15px", width: "14vw" }}>Providing IT support for PCs, printers, peripherals, telephone systems, and cellular devices </li>
-                                                <li className="DescPhrase" style={{ paddingBottom: "15px", width: "14vw" }}>Supporting system security through OS and application patching, anti-virus support</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    {/* Zookeeping Job */}
-                                    <div className="JobDesc">
-                                        {/* Left side details */}
-                                        <div className="TitlePhrase">
-                                            <h2>Zookeeper</h2>
-                                            <div className="LogoPhrase">
-                                                <img style={{ width: "32px", height: "32px" }} src="./ZooMagIcon.jpg" />
-                                                <h3>Zoo Magnet</h3>
-                                            </div>
-                                            <div className="LogoPhrase">
-                                                <img style={{ width: "20px", height: "20px" }} src="./Calendar.png" />
-                                                <p>August 2017-<br />June 2018</p>
-                                            </div>
-                                            <div className="LogoPhrase">
-                                                <img style={{ width: "16px", height: "20px" }} src="./LocPin.png" />
-                                                <p>Los Angeles, CA</p>
-                                            </div>
-                                        </div>
-                                        {/* Divider */}
-                                        <div className="VerticalLine" />
-                                        {/* Right side description */}
-                                        <div className="DescPhrase">
-                                            <p>
-                                                While attending Zoo Magnet High School, I participated in the Animal Husbandry Internship. I assisted the zookeepers with daily activities at the Los Angeles Zoo.
-                                                <br/><br/>
-                                                Specific responsibilities included overseeing hoof stock such as okapi, kudzu, bongos, as well as lions and ostriches, porcupines and more - maintaining their habitat, preparing meals, maintaining detailed heath records and ensuring their safety.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    {/* Student Store Job */}
-                                    <div className="JobDesc">
-                                        {/* Left side details */}
-                                        <div className="TitlePhrase">
-                                            <h2>Business Manager</h2>
-                                            <div className="LogoPhrase">
-                                                <img style={{ width: "32px", height: "32px" }} src="./ZooMagIcon.jpg" />
-                                                <h3>Zoo Magnet</h3>
-                                            </div>
-                                            <div className="LogoPhrase">
-                                                <img style={{ width: "20px", height: "20px" }} src="./Calendar.png" />
-                                                <p>September 2017-<br />June 2018</p>
-                                            </div>
-                                            <div className="LogoPhrase">
-                                                <img style={{ width: "16px", height: "20px" }} src="./LocPin.png" />
-                                                <p>Los Angeles, CA</p>
-                                            </div>
-                                        </div>
-                                        {/* Divider */}
-                                        <div className="VerticalLine" />
-                                        {/* Right side description */}
-                                        <div className="DescPhrase">
-                                            <p>
-                                                Researched, planned, and created a campus store for the North Hollywood Zoo Magnet School. 
-                                                As Business Manager, my responsibilities included over-site of all sales, inventory, staffing, finance, and suppliers, as well as adhering to LAUSD food regulation requirements.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
+                                <div>{jobs}</div>
                             </div>
                         </div>
                     </div>
@@ -230,9 +100,7 @@ class Resume extends Component {
                             <div style={{ display: "flex", flexDirection: "row" }}>
                                 {/* Styled item bullet points*/}
                                 <img src="./LeafWalls.png" />
-                                <div style={{ display: "flex", flexDirection: "column" }}>
-                                {education}
-                                </div>
+                                <div style={{ display: "flex", flexDirection: "column" }}>{education}</div>
                             </div>
                         </div>
                     </div>
