@@ -1,4 +1,7 @@
-/* Main App */
+
+/*----------------------------------------------*/
+/*	Main App
+/*----------------------------------------------*/
 .App {
     background-color: #B4D6C1;
     display: flex;
@@ -40,7 +43,10 @@
     flex-direction: column;
 }
 
-/* Intro Section */
+/*----------------------------------------------*/
+/*	Intro Section
+/*----------------------------------------------*/
+
 .Intro {
     display: flex;
     flex-direction: column;
@@ -52,7 +58,9 @@
     text-align: center;
 }
 
-/* About Section */
+/*----------------------------------------------*/
+/*	About Section
+/*----------------------------------------------*/
 
 .About {
     background-color: #FEFBEA;
@@ -157,7 +165,9 @@
     width: 40vw;
 }
 
-/* Resume Section */
+/*----------------------------------------------*/
+/*	Resume Section
+/*----------------------------------------------*/
 
 .Resume-container {
     font-size: 17px;
@@ -210,11 +220,12 @@
     width: 15vw;
 }
 
-/* Portfolio Section */
+/*----------------------------------------------*/
+/*	Portfolio Section
+/*----------------------------------------------*/
 
 .Portfolio {
     padding: 10vh;
-    background-color: #FEFBEA;
 }
 .Portfolio-Content {
     display: flex;
@@ -260,23 +271,77 @@
     padding: 5px
 }
 
-/* Testimonials Section */
+/*----------------------------------------------*/
+/*	Testimonials Section
+/*----------------------------------------------*/
 
 .Testimonials {
     padding: 10vh;
     font-size: 25px;
+    background-color: #FEFBEA;
 }
 
-/* Skills Section */
+/*----------------------------------------------*/
+/*	Skill Section
+/*----------------------------------------------*/
 
-.Skillbar {
+.Skills {
+    display: flex;
+    flex-direction: column;
+    background-color: #FEFBEA;
+}
+
+.Skill-bars-container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
 
-/* Footer Section */
+.bars {
+    width: 90%;
+    float: left;
+    padding: 0;
+    text-align: left;
+}
+
+    .bars .skills {
+        margin-top: 36px;
+        list-style: none;
+    }
+
+    .bars li {
+        margin-bottom: 60px;
+        background: #ccc;
+        height: 42px;
+        border-radius: 3px;
+    }
+
+        .bars li em {
+            font: 15px 'opensans-bold', sans-serif;
+            color: #313131;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: normal;
+            position: relative;
+            top: -36px;
+        }
+
+.bar-expand {
+    position: absolute;
+    margin: 0;
+    padding-right: 24px;
+    background: #313131;
+    display: inline-block;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 3px 0 0 3px;
+}
+
+/*----------------------------------------------*/
+/*	Footer Section
+/*----------------------------------------------*/
+
 .Footer {
     display: flex;
     justify-content: space-between;
@@ -305,49 +370,3 @@
     right: 0;
 }
 
-/*----------------------------------------------*/
-/*	Skill Bars
-/*----------------------------------------------*/
-
-.bars {
-    width: 95%;
-    float: left;
-    padding: 0;
-    text-align: left;
-}
-
-    .bars .skills {
-        margin-top: 36px;
-        list-style: none;
-    }
-
-    .bars li {
-        position: relative;
-        margin-bottom: 60px;
-        background: #ccc;
-        height: 42px;
-        border-radius: 3px;
-    }
-
-        .bars li em {
-            font: 15px 'opensans-bold', sans-serif;
-            color: #313131;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-weight: normal;
-            position: relative;
-            top: -36px;
-        }
-
-.bar-expand {
-    position: absolute;
-    left: 0;
-    top: 0;
-    margin: 0;
-    padding-right: 24px;
-    background: #313131;
-    display: inline-block;
-    height: 42px;
-    line-height: 42px;
-    border-radius: 3px 0 0 3px;
-}

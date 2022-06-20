@@ -43,6 +43,25 @@ class Portfolio extends Component {
     }
 
     render() {
+
+        if (this.props.data) {
+            var projects = this.props.data.projects.map(function (projects) {
+                var url = "location.href = '" + projects.url + "';"
+                return <div style={{padding:"3%"}}>
+                    <div style={{ backgroundColor: "white", borderTopLeftRadius: "5%", borderTopRightRadius: "5%", width: "35vw", height: "30vh", minWidth: "300px", minHeight: "400px" }}>
+                        <img src={projects.image} style={{ borderTopLeftRadius: "5%", borderTopRightRadius: "5%", width: "100%", height: "60%" }} />
+                        <div>
+                            <p style={{ height: "10%", display: "flex", justifyContent: "center" }}>{projects.description}</p>
+                            <div style={{ height: "10%", display: "flex", justifyContent: "space-between" }} >
+                                <button onClick={event => window.location.href = projects.url} >View Github</button>
+                                <h2>{projects.title}</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            })
+        }
+
         return (
             <div className="Portfolio">
                 <div className="Section-Header">
@@ -117,6 +136,9 @@ class Portfolio extends Component {
                             </div>
                         </div>    
                     </div>
+                </div>
+                <div style={{ display: "flex", flexDirection: "row", flexFlow: "row wrap" }}>
+                    {projects}
                 </div>
             </div>
         );

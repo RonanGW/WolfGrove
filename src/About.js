@@ -49,6 +49,7 @@ class About extends Component {
         }
 
         return (
+            <section id="about">
             <div className="About">
                 <div className="Section-Header">
                     <div className="Section-Header-Alignment">
@@ -107,7 +108,8 @@ class About extends Component {
                     </div>
                     </div>
                 {/*</ScrollAnimation>*/}
-            </div>
+                </div>
+            </section>
         );
     }
 }

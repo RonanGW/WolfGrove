@@ -72,6 +72,7 @@ class Resume extends Component {
         }
 
         return (
+            <section id="resume">
             <div className="Resume-container">
                 <div className="Section-Header">
                     <div className="Section-Header-Alignment">
@@ -105,7 +106,8 @@ class Resume extends Component {
                         </div>
                     </div>
                 </div>
-            </div>
+                </div>
+                </section>
         );
     }
 }

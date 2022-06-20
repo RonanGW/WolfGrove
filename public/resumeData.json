@@ -164,34 +164,28 @@
   "portfolio": {
     "projects": [
       {
-        "title": "Canadian Wanderlust",
-        "category": "My Travel Blog for my post-university travels",
-        "image": "canadian-wanderlust.jpg",
-        "url": "https://www.canadianwanderlust.com"
+        "title": "WolfGrove",
+        "description": "Person Resume Website. (You're here!)'",
+        "image": "https://media.istockphoto.com/photos/sunlight-through-the-coniferous-forest-picture-id148973567?k=20&m=148973567&s=612x612&w=0&h=MqB824yiU7JJHI2JV5AZPW5FW5IAyG5hg4mRd9NuLmA=",
+        "url": "https://github.com/RonanGW"
       },
       {
-        "title": "Fury Fighting Gear",
-        "category": "(offline now) A fighting gear company I started",
-        "image": "fury-fighting-gear.jpg",
-        "url": "http://www.timbakerdev.com"
+        "title": "phyNGSD",
+        "description": "Data Compression Algorithm",
+        "image": "https://videohive.img.customer.envatousercontent.com/files/2f4e450e-c307-48e7-810b-d61ec2367de5/inline_image_preview.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=4e2f0efc76db407633c1a8db14a0b94c",
+        "url": "https://github.com/pcdslab/PHYNGSD"
       },
       {
-        "title": "Original Thai Food",
-        "category": "Website I built for a restaurant I like in Thailand",
-        "image": "original-thai-food.jpg",
-        "url": "http://www.timbakerdev.com/originalthaifood.github.io"
+        "title": "Biodiversity Map",
+        "description": "Interactive Map",
+        "image": "https://media.istockphoto.com/photos/green-forest-picture-id1173733640?b=1&k=20&m=1173733640&s=170667a&w=0&h=qVsBTxqYFPqZZkRr1OzHu-92jNtscIrST0UZin26CQU=",
+        "url": "https://github.com/langstonhowley/seminar-webpage"
       },
       {
-        "title": "Resume Website",
-        "category": "A React based resume website template",
+        "title": "TIPO",
+        "description": "To-Do List",
         "image": "resume-website.jpg",
-        "url": "http://www.timbakerdev.com"
-      },
-      {
-        "title": "Smirkspace",
-        "category": "(MVP Only) A React and Meteor based chat University project.",
-        "image": "smirkspace.jpg",
-        "url": "http://www.smirkspace.com"
+        "url": "https://github.com/GenesisMM/TIPO"
       }
     ]
   },
