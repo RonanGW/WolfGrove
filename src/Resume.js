@@ -14,7 +14,8 @@ class Resume extends Component {
                     <div style={{ paddingLeft: "5%" }}>
                         <h2>{education.school}</h2>
                         <h3>{education.degree}</h3>
-                        <p>{date}</p>
+                        <p>{education.location}</p>
+                        <p><i>{date}</i></p>
                         <div >
                             <p>{desc}</p>
                         </div>
@@ -58,7 +59,8 @@ class Resume extends Component {
                         <div style={{ paddingLeft: "5%" }}>
                             <h2>{work.title}</h2>
                             <h3>{work.company}</h3>
-                            <p>{date}</p>
+                            <p>{work.location}</p>
+                            <p><i>{date}</i></p>
                             <div >
                                 <p>{desc}</p>
                                 <ul>{tasks}</ul>
