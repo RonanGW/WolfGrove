@@ -175,12 +175,11 @@
 }
 .Resume {
     display: flex;
-    flex-direction: row;
-    flex-flow: row wrap;
+    flex-direction: column;
+    /*flex-flow: row wrap;*/
 }
 
 .Resume-section {
-    padding: 10vh;
     padding-left: 15vh;
 }
 
