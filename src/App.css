@@ -3,7 +3,7 @@
 /*	Main App
 /*----------------------------------------------*/
 .App {
-    background-color: #B4D6C1;
+    background-color: #e8f4ea;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -163,6 +163,12 @@
 .HorizontalLine {
     border-top: 3px black solid;
     width: 40vw;
+}
+
+.SectionNameLine {
+    border-top: 3px black solid;
+    height: 0px;
+    width: 10vw;
 }
 
 /*----------------------------------------------*/

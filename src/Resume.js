@@ -100,8 +100,11 @@ class Resume extends Component {
             <div className="Resume-container">
                 <div className="Section-Header">
                     <div className="Section-Header-Alignment">
-                        <h1>Experience</h1>
-                        <div className="HorizontalLine" />
+                            <h1 style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                                <div className="SectionNameLine" />
+                                Experience
+                                <div className="SectionNameLine" />
+                            </h1>
                     </div>
                 </div>
                 <div className="Resume">

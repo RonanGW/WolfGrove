@@ -24,8 +24,11 @@ class Skills extends Component {
             <div className="Skills">
                 <div className="Section-Header">
                     <div className="Section-Header-Alignment">
-                        <h1>Skills</h1>
-                        <div className="HorizontalLine" />
+                        <h1 style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                            <div className="SectionNameLine" />
+                            Skills
+                            <div className="SectionNameLine" />
+                        </h1>
                     </div>
                 </div>
                 <div className="Skill-bars-container">

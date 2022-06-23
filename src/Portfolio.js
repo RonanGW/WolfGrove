@@ -66,8 +66,11 @@ class Portfolio extends Component {
             <div className="Portfolio">
                 <div className="Section-Header">
                     <div className="Section-Header-Alignment">
-                        <h1>Portfolio</h1>
-                        <div className="HorizontalLine" />
+                        <h1 style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                            <div className="SectionNameLine" />
+                            Portfolio
+                            <div className="SectionNameLine" />
+                        </h1>
                     </div>
                 </div>
                 {/*<div classname="portfolio-content">*/}

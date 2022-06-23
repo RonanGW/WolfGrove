@@ -7,8 +7,11 @@ class Testimonials extends Component {
             <div className="Testimonials">
                 <div className="Section-Header">
                     <div className="Section-Header-Alignment">
-                        <h1>Testimonials</h1>
-                        <div className="HorizontalLine" />
+                        <h1 style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                            <div className="SectionNameLine" />
+                            Testimonials
+                            <div className="SectionNameLine" />
+                        </h1>
                     </div>
                 </div>
                 <div style={{ display: "flex", flexDirection: "row" }}>

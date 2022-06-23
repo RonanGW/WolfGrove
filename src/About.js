@@ -53,8 +53,11 @@ class About extends Component {
             <div className="About">
                 <div className="Section-Header">
                     <div className="Section-Header-Alignment">
-                        <h1>About Me</h1>
-                        <div className="HorizontalLine" />
+                        <h1 style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                            <div className="SectionNameLine" />
+                            About Me
+                            <div className="SectionNameLine" />
+                        </h1>
                     </div>
                 </div>
                 {/*<ScrollAnimation animateIn="fadeIn">*/}
