@@ -48,7 +48,7 @@ class Portfolio extends Component {
             var projects = this.props.data.projects.map(function (projects) {
                 var url = "location.href = '" + projects.url + "';"
                 return <div style={{padding:"1%"}}>
-                    <div style={{ boxShadow: "rgba(0, 0, 0, 0.12) 0 5px 5px", backgroundColor: "white", borderTopLeftRadius: "2%", borderTopRightRadius: "2%", width: "25vw", height: "30vh", minWidth: "30px", minHeight: "400px" }}>
+                    <div style={{ boxShadow: "rgba(0, 0, 0, 0.12) 0 5px 5px", backgroundColor: "white", borderTopLeftRadius: "2%", borderTopRightRadius: "2%", width: "25vw", height: "30vh", minWidth: "400px", minHeight: "400px" }}>
                         <img src={projects.image} style={{ borderTopLeftRadius: "2%", borderTopRightRadius: "2%", width: "100%", height: "60%" }} />
                         <div>
                             <p style={{ paddingLeft: "2%", paddingRight: "2%", height: "10%", display: "flex", justifyContent: "center" }}>{projects.description}</p>
