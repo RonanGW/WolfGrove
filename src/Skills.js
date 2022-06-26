@@ -12,11 +12,23 @@ class Skills extends Component {
 
         if (this.props.data) {
             var skills = this.props.data.skills.map(function (skills) {
-                var className = 'bar-expand ' + skills.name.toLowerCase();
-                return <li key={skills.name}>
-                        <span style={{ width: skills.level }} className={className}></span>
-                        <em>{skills.name}</em>
-                       </li>
+                var percent = skills.level + "%";
+                var r = 100 - parseInt(skills.level);
+                var remainder = r.toString() + "%";
+                return <li>
+                        <div style={{ display: "flex", flexDirection: "column", marginBottom: "36px" }}>
+                            <em>{skills.name}</em>
+                            <div style={{ display: "flex", flexDirection: "row", height: "42px" }}>
+                                <div style={{ width: percent, backgroundColor: "black", borderRadius: "3px 0 0 3px"}} />
+                                <div style={{ width: remainder, backgroundColor: "grey", borderRadius: "3px 0 0 3px"}} />
+                            </div>
+                        </div>
+                    </li>
+                //var className = 'bar-expand ' + skills.name.toLowerCase();
+                //return <li key={skills.name}>
+                //        <span style={{ width: skills.level }} className={className}></span>
+                //        <em>{skills.name}</em>
+                //       </li>
             })
         }
 
@@ -32,8 +44,8 @@ class Skills extends Component {
                     </div>
                 </div>
                 <div className="Skill-bars-container">
-                    <div className="bars">
-                        <ul className="skills">
+                    <div className="barz" style={{ width: "70%"}}>
+                        <ul className="skills" style={{ listStyle: "none"}}>
                             {skills}
                         </ul>
                     </div>
