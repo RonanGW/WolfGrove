@@ -16,19 +16,14 @@ class Skills extends Component {
                 var r = 100 - parseInt(skills.level);
                 var remainder = r.toString() + "%";
                 return <li>
-                        <div style={{ display: "flex", flexDirection: "column", marginBottom: "36px" }}>
-                            <em>{skills.name}</em>
-                            <div style={{ display: "flex", flexDirection: "row", height: "42px" }}>
+                        <div className="skill-container">
+                            <em className="skill-title">{skills.name}</em>
+                            <div className="bar-container">
                                 <div style={{ width: percent, backgroundColor: "black", borderRadius: "3px 0 0 3px"}} />
                                 <div style={{ width: remainder, backgroundColor: "grey", borderRadius: "3px 0 0 3px"}} />
                             </div>
                         </div>
                     </li>
-                //var className = 'bar-expand ' + skills.name.toLowerCase();
-                //return <li key={skills.name}>
-                //        <span style={{ width: skills.level }} className={className}></span>
-                //        <em>{skills.name}</em>
-                //       </li>
             })
         }
 
@@ -36,7 +31,7 @@ class Skills extends Component {
             <div className="Skills">
                 <div className="Section-Header">
                     <div className="Section-Header-Alignment">
-                        <h1 style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                        <h1 className="Section-Title-Line">
                             <div className="SectionNameLine" />
                             Skills
                             <div className="SectionNameLine" />
@@ -44,8 +39,8 @@ class Skills extends Component {
                     </div>
                 </div>
                 <div className="Skill-bars-container">
-                    <div className="barz" style={{ width: "70%"}}>
-                        <ul className="skills" style={{ listStyle: "none"}}>
+                    <div className="bars">
+                        <ul>
                             {skills}
                         </ul>
                     </div>
