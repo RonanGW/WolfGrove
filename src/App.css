@@ -252,48 +252,51 @@
 .Portfolio {
     padding: 10vh;
 }
+
 .Portfolio-Content {
+    padding-top: 3%;
     display: flex;
-    align-content: center;
-    justify-content: center;
     flex-direction: row;
     flex-flow: row wrap;
+    justify-content: center;
 }
 
-.Project-Button-Container {
-    padding: 5vh;
+.ProjectContainer {
+    padding: 1%;
 }
 
-.Project-Button {
-    width: 75vh;
-    height: 15vh;
-    background-color: #207567;
-    font-size: 30px;
-    color: azure;
-    border: solid 5px #207567;
+.ProjectBackground {
+    box-shadow: rgba(0, 0, 0, 0.12) 0 5px 5px;
+    background-color: white;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    width: 25vw;
+    height: 30vh;
+    min-width: 400px;
+    min-height: 400px;
 }
 
-.openButton {
+.ProjectImg {
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    width: 100%;
+    height: 60%;
+}
+
+.ProjectDescription {
+    padding-left: 2%;
+    padding-right: 2%;
+    height: 10%;
     display: flex;
     justify-content: center;
 }
 
-.closeButton {
-    opacity: 0;
-    width: 0;
-    height: 0;
-    pointer-events: none;
-}
-
-.buttonDesc {
-    width: 74vh;
-    background-color: #B4D6C1;
-    box-sizing: border-box;
-    border: solid 5px #207567;
-    border-top: 0px;
-    border-bottom-left-radius: 5%;
-    border-bottom-right-radius: 5%;
-    padding: 5px
+.ProjectHeader {
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
 }
 
 /*----------------------------------------------*/
