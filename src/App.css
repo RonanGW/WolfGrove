@@ -49,6 +49,12 @@
     align-items: center;
 }
 
+.VerticalLine {
+    border-left: 3px black solid;
+    width: 3px;
+    padding-right: 10px;
+}
+
 /*----------------------------------------------*/
 /*	Intro Section
 /*----------------------------------------------*/
@@ -181,25 +187,50 @@
 /*	Resume Section
 /*----------------------------------------------*/
 
+.Resume {
+    display: flex;
+    flex-direction: column;
+}
+
 .Resume-container {
     font-size: 17px;
     padding-top: 10vh;
 }
-.Resume {
-    display: flex;
-    flex-direction: column;
-    /*flex-flow: row wrap;*/
-}
 
 .Resume-section {
     padding-left: 15vh;
+    padding-right: 25vh;
 }
 
 .JobDesc {
+    padding-left: 10%;
+    padding-right: 10%;
     display: flex;
-    align-content: flex-start;
-    padding: 5vh;
-    padding-right: 0vh;
+    flex-direction: row;
+}
+
+.JobContainer {
+    padding-left: 5%;
+}
+
+.JobTitle {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    font-size: 24px;
+    margin: 2px;
+}
+
+.JobCompany {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin: 2px;
+}
+
+.JobItem {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    font-weight: bold;
+    margin: 2px;
 }
 
 .SchoolDesc {
@@ -207,28 +238,10 @@
     flex-direction: row;
 }
 
-.VerticalLine {
-    border-left: 3px black solid;
-    width: 3px;
-    padding-right: 10px;
-}
-
-.LogoPhrase {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.TitlePhrase {
-    width: 20vh;
-    text-align: right;
-    padding-right: 2vw;
-}
-
-.DescPhrase {
-    text-align: left;
-    width: 15vw;
+.CompanyIcon {
+    border-radius: 10%;
+    width: 10%;
+    height: 10%;
 }
 
 /*----------------------------------------------*/
@@ -287,7 +300,7 @@
 /*----------------------------------------------*/
 
 .Testimonials {
-    padding: 10vh;
+    padding: 20vh;
     font-size: 25px;
     background-color: #FEFBEA;
 }
