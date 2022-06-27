@@ -309,6 +309,16 @@
     background-color: #FEFBEA;
 }
 
+.TestimonialsContent {
+    display: flex;
+    flex-direction: row;
+}
+
+.QuoteImg {
+    width: 32px;
+    height: 32px;
+}
+
 /*----------------------------------------------*/
 /*	Skill Section
 /*----------------------------------------------*/
