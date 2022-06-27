@@ -9,13 +9,13 @@ class Resume extends Component {
                 var date = education.startDate + "-\n" + education.endDate;
                 var description = education.description + "\n\nExtracirriculars: " + education.extracirriculars;
                 var desc = description.split('\n').map(str => <p>{str}</p>);
-                return <div style={{ paddingLeft: "10%", paddingRight: "10%", display: "flex", flexDirection: "row" }}>
-                    <img style={{ borderRadius: "10%", width: "10%", height: "10%" }} src={education.icon} />
-                    <div style={{ paddingLeft: "5%" }}>
-                        <h2>{education.school}</h2>
-                        <h3>{education.degree}</h3>
-                        <p>{education.location}</p>
-                        <p><i>{date}</i></p>
+                return <div className="ExpContainer">
+                    <img className="CompanyIcon" src={education.icon} />
+                    <div className="DescContainer">
+                        <h2 className="ExpTitle">{education.school}</h2>
+                        <h3 className="ExpCompany">{education.degree}</h3>
+                        <p className="ExpItem">{education.location}</p>
+                        <p className="ExpItem"><i>{date}</i></p>
                         <div >
                             <p>{desc}</p>
                         </div>
@@ -29,13 +29,13 @@ class Resume extends Component {
                 var tasks = work.tasks.map(function (task) {
                     return <li>{task}</li>
                 });
-                return <div className="JobDesc">
+                return <div className="ExpContainer">
                         <img className="CompanyIcon" src={work.icon} />
-                        <div className="JobContainer">
-                            <h2 className="JobTitle">{work.title}</h2>
-                            <h3 className="JobCompany">{work.company}</h3>
-                            <p className="JobItem">{work.location}</p>
-                            <p className="JobItem"><i>{date}</i></p>
+                        <div className="DescContainer">
+                            <h2 className="ExpTitle">{work.title}</h2>
+                            <h3 className="ExpCompany">{work.company}</h3>
+                            <p className="ExpItem">{work.location}</p>
+                            <p className="ExpItem"><i>{date}</i></p>
                             <div>
                                 <p>{desc}</p>
                                 <ul>{tasks}</ul>
@@ -67,13 +67,7 @@ class Resume extends Component {
                     {/* Education section */}
                     <div className="Resume-section">
                         <div>
-                            {/* Section header */}
-                            {/*<h1>Education</h1>*/}
-                            {/*<div style={{ display: "flex", flexDirection: "row" }}>*/}
-                            {/*    */}{/* Styled item bullet points*/}
-                            {/*    <img src="./LeafWalls.png" />*/}
                             <div>{education}</div>
-                            {/*</div>*/}
                         </div>
                     </div>
                 </div>
