@@ -3,7 +3,7 @@
 /*	Main App
 /*----------------------------------------------*/
 .App {
-    background-color: #e8f4ea;
+    background-color: ivory;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -55,6 +55,11 @@
     padding-right: 10px;
 }
 
+.HorizontalLine {
+    border-top: 3px black solid;
+    width: 40vw;
+}
+
 /*----------------------------------------------*/
 /*	Intro Section
 /*----------------------------------------------*/
@@ -75,8 +80,6 @@
 /*----------------------------------------------*/
 
 .About {
-    background-color: #FEFBEA;
-    padding: 10vh;
     font-size: 25px;
 }
 
@@ -94,10 +97,11 @@
 
 .About-item {
     margin: 1vw;
+    align-self: flex-start;
 }
 
 .About-PFP {
-    border-radius: 50%;
+    border-radius: 5%;
     height: 300px;
     width: 300px;
     border-style: solid;
@@ -170,11 +174,6 @@
 .fadeIn {
     animation: fadeInRight;
     animation-duration: 2s;
-}
-
-.HorizontalLine {
-    border-top: 3px black solid;
-    width: 40vw;
 }
 
 .SectionNameLine {

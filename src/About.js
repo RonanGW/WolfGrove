@@ -49,18 +49,60 @@ class About extends Component {
         }
 
         return (
-            <section id="about">
+            <div style={{ margin : "0px", fontSize: "25px"}}>
+                <div className="Section-Header-Alignment">
+                    <h1 className="Section-Title-Line">
+                        <div className="SectionNameLine" />
+                        About Me
+                        <div className="SectionNameLine" />
+                    </h1>
+                </div>
+                <div style={{ display: "flex", justifyContent: "start" }}>
+                    <div style={{ width: "50vw", display: "flex", justifyContent: "flex-end"}}>
+                        <div style={{ display: "flex", flexDirection: "column"}}>
+                            <img style={{ width: "300px", height: "300px", border: "solid 5px green", borderRadius: "5%" }} src={pfp} />
+                            {name}<br />{area}
+                            <div style={{ display: "flex", flexDirection: "row" }}>
+                                <button title="Download my Resume" className="DLLogo" onClick={this.DownloadResume}></button>
+                                <button title="Link to my GitHub" className="GHLogo" onClick={this.Redirect.bind(this, "https://github.com/RonanGW")}></button>
+                                <button title="Link to my LinkedIn" className="LILogo" onClick={this.Redirect.bind(this, "https://www.linkedin.com/in/ronan-wolfe/")}></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div style={{ width: "50vw", display: "flex", justifyContent: "flex-start"}}>
+                        <div className="About-item">
+                            <div className={this.state.interests ? 'fadeInInterests' : 'fadeOutInterests'}>
+                                My Story<br/>{bio}
+                                <button className="Interests-Button" onClick={this.handleFade}>Read My Interests</button>
+                            </div>
+                            <div className={this.state.interests ? 'fadeOutInterests' : 'fadeInInterests'}>
+                                My Interests
+                                <ul>
+                                    <li style={{ paddingBottom: "15px" }}>Full Stack Software Engineer</li>
+                                    <li style={{ paddingBottom: "15px" }}>Data Scientist</li>
+                                    <li style={{ paddingBottom: "15px" }}>Biotechnology</li>
+                                    <li style={{ paddingBottom: "15px" }}>IT</li>
+                                    <li style={{ paddingBottom: "15px" }}>Wildlife Conservation</li>
+                                </ul>
+                                <button className="Interests-Button" onClick={this.handleFade}>Read My Story</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        );
+            {/* <section id="about">
                 <div className="About">
                 <div className="Section-Header">
                     <div className="Section-Header-Alignment">
-                        <h1 style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                        <h1 className="Section-Title-Line">
                             <div className="SectionNameLine" />
                             About Me
                             <div className="SectionNameLine" />
                         </h1>
                     </div>
-                </div>
-                    <div style={{ display: "flex", flexDirection: "row" }}>
+                    </div>
+                    <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignSelf: "flex-start" }}>
                         <div style={{ display: "flex", flexDirection: "column" }}>
                             <img src={pfp} className="About-PFP" />
                             <p>{name}</p>
@@ -72,14 +114,12 @@ class About extends Component {
                             </div>
                         </div>
                         <div className="About-item">
-                            {/*My story Section*/}
                             <div className={this.state.interests ? 'fadeInInterests' : 'fadeOutInterests'}>
                                 <h3>My Story</h3>
                                 <p> {bio}
                                 </p>
                                 <button className="Interests-Button" onClick={this.handleFade}>Read My Interests</button>
                             </div>
-                            {/*Interests section*/}
                             <div className={this.state.interests ? 'fadeOutInterests' : 'fadeInInterests'}>
                                 <h3>My Interests</h3>
                                 <ul>
@@ -93,60 +133,67 @@ class About extends Component {
                             </div>
                         </div>
                     </div>
-            {/*<ScrollAnimation animateIn="fadeIn">*/}
-            {/*        <div style={{ transition: this.state.visibility ? "" : "width 7s 7s, height 7s 7s, opacity 7s" }} className="About-content">*/}
-            {/*        */}{/* Personal info and PFP */}
-            {/*        <div className="About-Left">*/}
-            {/*            */}{/* Personal info */}
-            {/*            <div style={{ display: "flex", flexDirection: "column", justifyContent: "center" }} >*/}
-            {/*            <div className="About-item">*/}
-            {/*                <h5>Name:</h5>*/}
-            {/*                <p>{name}</p>*/}
-            {/*                <h5>Area:</h5>*/}
-            {/*                <p>{area}</p>*/}
-            {/*                <h5>Links:</h5>*/}
-            {/*                <button title="Download my Resume" className="DLLogo" onClick={this.DownloadResume}></button>*/}
-            {/*                <button title="Link to my GitHub" className="GHLogo" onClick={this.Redirect.bind(this, "https://github.com/RonanGW")}></button>*/}
-            {/*                <button title="Link to my LinkedIn" className="LILogo" onClick={this.Redirect.bind(this, "https://www.linkedin.com/in/ronan-wolfe/")}></button>*/}
-            {/*                </div>*/}
-            {/*            </div>*/}
-            {/*            */}{/* PFP */}
-            {/*            <div style={{ display: "flex", flexDirection: "column", justifyContent: "center" }} className="About-item">*/}
-            {/*                <img src={pfp} className="About-PFP" />*/}
-            {/*            </div>*/}
-            {/*        </div>*/}
-            {/*        */}{/* Swapping interests and story sections */}
-                    {/*<div className="About-item">*/}
-                    {/*     My story Section */}
-                    {/*    <div className={this.state.interests ? 'fadeInInterests' : 'fadeOutInterests'}>*/}
-                    {/*        <h3>My Story</h3>*/}
-                    {/*        <p> {bio}I'm a software engineer with the experience to back up that dream. I grew up in Los Angeles where I took an interest in*/}
-                    {/*            the life sciences, working as a zookeeper and frequently volunteering for conservation projects. Since 2018 I have traveled*/}
-                    {/*            around the country and gone to college. I've met people of all kinds and lived in the biggest cities, small towns and everything in*/}
-                    {/*            between. Feeling well-rounded, I am excitedly building the foundation for a career for myself. I've earned my Bachelor's of Computer Science*/}
-                    {/*            of which I graduated early cum laude from Kalamazoo College as well as worked in compression algorithm development research to both learn more*/}
-                    {/*            and prove my aptitude.*/}
-                    {/*        </p>*/}
-                    {/*        <button className="Interests-Button" onClick={this.handleFade}>Read My Interests</button>*/}
-                    {/*    </div>*/}
-                    {/*     Interests section */}
-                    {/*        <div  className={this.state.interests ? 'fadeOutInterests' : 'fadeInInterests'}>*/}
-                    {/*        <h3>My Interests</h3>*/}
-                    {/*        <ul>*/}
-                    {/*            <li style={{ paddingBottom: "15px" }}>Full Stack Software Engineer</li>*/}
-                    {/*            <li style={{ paddingBottom: "15px" }}>Data Scientist</li>*/}
-                    {/*            <li style={{ paddingBottom: "15px" }}>Biotechnology</li>*/}
-                    {/*            <li style={{ paddingBottom: "15px" }}>IT</li>*/}
-                    {/*            <li style={{ paddingBottom: "15px" }}>Wildlife Conservation</li>*/}
-                    {/*        </ul>*/}
-                    {/*        <button className="Interests-Button" onClick={this.handleFade}>Read My Story</button>*/}
-                    {/*    </div>*/}
-                    {/*</div>*/}
-                    {/*</div>*/}
-            {/*    */}{/*</ScrollAnimation>*/}
+
+
+
+
+
+
+            <ScrollAnimation animateIn="fadeIn">
+                    <div style={{ transition: this.state.visibility ? "" : "width 7s 7s, height 7s 7s, opacity 7s" }} className="About-content">
+                    Personal info and PFP
+                    <div className="About-Left">
+                         Personal info 
+                        <div style={{ display: "flex", flexDirection: "column", justifyContent: "center" }} >
+                        <div className="About-item">
+                            <h5>Name:</h5>
+                            <p>{name}</p>
+                            <h5>Area:</h5>
+                            <p>{area}</p>
+                            <h5>Links:</h5>
+                            <button title="Download my Resume" className="DLLogo" onClick={this.DownloadResume}></button>
+                            <button title="Link to my GitHub" className="GHLogo" onClick={this.Redirect.bind(this, "https://github.com/RonanGW")}></button>
+                            <button title="Link to my LinkedIn" className="LILogo" onClick={this.Redirect.bind(this, "https://www.linkedin.com/in/ronan-wolfe/")}></button>
+                            </div>
+                        </div>
+                         PFP 
+                        <div style={{ display: "flex", flexDirection: "column", justifyContent: "center" }} className="About-item">
+                            <img src={pfp} className="About-PFP" />
+                        </div>
+                    </div>
+                     Swapping interests and story sections 
+                    <div className="About-item">
+                         My story Section 
+                        <div className={this.state.interests ? 'fadeInInterests' : 'fadeOutInterests'}>
+                            <h3>My Story</h3>
+                            <p> {bio}I'm a software engineer with the experience to back up that dream. I grew up in Los Angeles where I took an interest in
+                                the life sciences, working as a zookeeper and frequently volunteering for conservation projects. Since 2018 I have traveled
+                                around the country and gone to college. I've met people of all kinds and lived in the biggest cities, small towns and everything in
+                                between. Feeling well-rounded, I am excitedly building the foundation for a career for myself. I've earned my Bachelor's of Computer Science
+                                of which I graduated early cum laude from Kalamazoo College as well as worked in compression algorithm development research to both learn more
+                                and prove my aptitude.
+                            </p>
+                            <button className="Interests-Button" onClick={this.handleFade}>Read My Interests</button>
+                        </div>
+                         Interests section 
+                            <div  className={this.state.interests ? 'fadeOutInterests' : 'fadeInInterests'}>
+                            <h3>My Interests</h3>
+                            <ul>
+                                <li style={{ paddingBottom: "15px" }}>Full Stack Software Engineer</li>
+                                <li style={{ paddingBottom: "15px" }}>Data Scientist</li>
+                                <li style={{ paddingBottom: "15px" }}>Biotechnology</li>
+                                <li style={{ paddingBottom: "15px" }}>IT</li>
+                                <li style={{ paddingBottom: "15px" }}>Wildlife Conservation</li>
+                            </ul>
+                            <button className="Interests-Button" onClick={this.handleFade}>Read My Story</button>
+                        </div>
+                    </div>
+                    </div>
+        </ScrollAnimation>
+
+
                 </div>
-            </section>
-        );
+            </section> */}
     }
 }
 
