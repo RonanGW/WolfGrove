@@ -80,19 +80,43 @@
 /*----------------------------------------------*/
 
 .About {
+    margin: 0px;
     font-size: 25px;
-}
-
-.About-Left {
-    width: 58%;
-    display: flex;
-    justify-content: end;
-    flex-flow: row wrap;
 }
 
 .About-content {
     display: flex;
-    flex-flow: row wrap;
+    justify-content: start;
+}
+
+
+.About-left {
+    width: 50vw;
+    padding-right: 3%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.About-right {
+    width: 50vw;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.About-left-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.About-links-banner {
+    display: flex;
+    flex-direction: column;
+}
+
+.About-profile {
+    display: flex;
+    flex-direction: column;
 }
 
 .About-item {
@@ -104,9 +128,7 @@
     border-radius: 5%;
     height: 300px;
     width: 300px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: #207567;
+    border: solid 5px green;
 }
 
 .Interests-Button {

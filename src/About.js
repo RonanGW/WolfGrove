@@ -12,7 +12,7 @@ class About extends Component {
 
         // Define the initial state:
         this.state = {
-            interests: true,
+            interests: false,
             visibility: false
         };
     }
@@ -49,7 +49,7 @@ class About extends Component {
         }
 
         return (
-            <div style={{ margin : "0px", fontSize: "25px"}}>
+            <div className="About">
                 <div className="Section-Header-Alignment">
                     <h1 className="Section-Title-Line">
                         <div className="SectionNameLine" />
@@ -57,23 +57,23 @@ class About extends Component {
                         <div className="SectionNameLine" />
                     </h1>
                 </div>
-                <div style={{ display: "flex", justifyContent: "start" }}>
-                    <div style={{ width: "50vw", paddingRight: "3%", display: "flex", justifyContent: "flex-end"}}>
-                        <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
-                            <div style={{ display: "flex", flexDirection: "column" }}>
+                <div className="About-content">
+                    <div className="About-left">
+                        <div className="About-left-content">
+                            <div className="About-links-banner">
                             <button title="Download my Resume" className="DLLogo" onClick={this.DownloadResume}></button>
                             <button title="Link to my GitHub" className="GHLogo" onClick={this.Redirect.bind(this, "https://github.com/RonanGW")}></button>
                             <button title="Link to my LinkedIn" className="LILogo" onClick={this.Redirect.bind(this, "https://www.linkedin.com/in/ronan-wolfe/")}></button>
                             </div>
-                            <div style={{ display: "flex", flexDirection: "column" }}>
-                                <img style={{ width: "300px", height: "300px", border: "solid 5px green", borderRadius: "5%" }} src={pfp} />
+                            <div className="About-profile">
+                                <img className="About-PFP" src={pfp} />
                                 <p style={{margin: "0px"}}>{name}</p>
                                 <p style={{margin: "0px"}}>{area}</p>
                                 
                             </div>
                         </div>
                     </div>
-                    <div style={{ width: "50vw", display: "flex", justifyContent: "flex-start"}}>
+                    <div className="About-right">
                         <div className="About-item">
                             <div className={this.state.interests ? 'fadeInInterests' : 'fadeOutInterests'}>
                                 My Story<br/>{bio}
