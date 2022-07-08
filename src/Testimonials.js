@@ -2,7 +2,26 @@ import React, { Component } from 'react';
 import './App.css';
 
 class Testimonials extends Component {
+
+    /* Default Constructor for About section */
+    constructor(props) {
+        super(props);
+    }
+
     render() {
+
+        if (this.props.data) {
+            var testmonial = this.props.data.testimonials.map(function (testimonials) {
+                return <div>
+                    <div className="TestimonialsContent">
+                        <img className="QuoteImg" src="https://www.pngall.com/wp-content/uploads/4/Quotation-Symbol-PNG.png" />
+                        {testimonials.quote}
+                    </div>
+                    - {testimonials.person}
+                </div>
+            })
+        }
+
         return (
             <div className="Testimonials">
                 <div className="Section-Header">
@@ -14,13 +33,7 @@ class Testimonials extends Component {
                         </h1>
                     </div>
                 </div>
-                <div className="TestimonialsContent">
-                    <img className="QuoteImg" src="https://www.pngall.com/wp-content/uploads/4/Quotation-Symbol-PNG.png" />
-                    <p>[Ronan] is willing to think analytically and
-                        creatively about problems and their possible solutions while being tremendously disciplined and
-                        attentive to his work.</p>
-                </div>
-                <p>-Dr. Sandino Vargas-Perez, Professor of Computer Science</p>
+                {testmonial}
             </div>
         );
     }

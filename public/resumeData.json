@@ -167,7 +167,7 @@
         "title": "WolfGrove",
         "description": "Person Resume Website. (You're here!)'",
         "image": "https://media.istockphoto.com/photos/sunlight-through-the-coniferous-forest-picture-id148973567?k=20&m=148973567&s=612x612&w=0&h=MqB824yiU7JJHI2JV5AZPW5FW5IAyG5hg4mRd9NuLmA=",
-        "url": "https://github.com/RonanGW"
+        "url": "https://github.com/RonanGW/WolfGrove"
       },
       {
         "title": "phyNGSD",
@@ -186,12 +186,8 @@
   "testimonials": {
     "testimonials": [
       {
-        "text": "Here you should write some nice things that someone has said about you. No lies though, employers can tell when you are lying.",
-        "user": "Kareem Abdul Jabbar"
-      },
-      {
-        "text": "That Tim Baker must be one of the most brilliant developers I've ever met! It is amazing that nobody has hired him yet. Hey you, you should hire this guy, he may be fresh out of University and have zero on the job experience but I am confident that he will be one of your best developers in no time!",
-        "user": "Steve Wozniak... impersonator"
+        "quote": "[Ronan] is willing to think analytically and creatively about problems and their possible solutions while being tremendously disciplined and attentive to his work.",
+        "person": "Dr. Sandino Vargas-Perez, Professor of Computer Science"
       }
     ]
   }
