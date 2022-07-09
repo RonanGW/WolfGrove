@@ -60,15 +60,21 @@ class About extends Component {
                 <div className="About-content">
                     <div className="About-left">
                         <div className="About-left-content">
-                            <div className="About-links-banner">
-                            <button title="Download my Resume" className="DLLogo" onClick={this.DownloadResume}></button>
-                            <button title="Link to my GitHub" className="GHLogo" onClick={this.Redirect.bind(this, "https://github.com/RonanGW")}></button>
-                            <button title="Link to my LinkedIn" className="LILogo" onClick={this.Redirect.bind(this, "https://www.linkedin.com/in/ronan-wolfe/")}></button>
-                            </div>
                             <div className="About-profile">
-                                <img className="About-PFP" src={pfp} />
-                                <p style={{margin: "0px"}}>{name}</p>
-                                <p style={{margin: "0px"}}>{area}</p>
+                                <div style={{display: "flex", flexDirection: "row"}}>
+                                    <img className="About-PFP" src={pfp} />
+                                    <div className="About-links-banner">
+                                        <button title="Download my Resume" className="DLLogo" onClick={this.DownloadResume}></button>
+                                        <button title="Link to my GitHub" className="GHLogo" onClick={this.Redirect.bind(this, "https://github.com/RonanGW")}></button>
+                                        <button title="Link to my LinkedIn" className="LILogo" onClick={this.Redirect.bind(this, "https://www.linkedin.com/in/ronan-wolfe/")}></button>
+                                    </div>
+                                </div>
+                                <div className="About-personal-info">
+                                    <p>{name}</p>
+                                </div>
+                                <div className="About-personal-info">
+                                    <p>{area}</p>
+                                </div>
                                 
                             </div>
                         </div>
@@ -76,8 +82,10 @@ class About extends Component {
                     <div className="About-right">
                         <div className="About-item">
                             <div className={this.state.interests ? 'fadeInInterests' : 'fadeOutInterests'}>
-                                My Story<br/>{bio}
-                                <button className="Interests-Button" onClick={this.handleFade}>Read My Interests</button>
+                                <p><b>My Story</b></p>{bio}
+                                <div style={{paddingTop: "5px"}}>
+                                    <button className="Interests-Button" onClick={this.handleFade}>Read My Interests</button>
+                                </div>
                             </div>
                             <div className={this.state.interests ? 'fadeOutInterests' : 'fadeInInterests'}>
                                 My Interests
