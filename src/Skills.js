@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import './App.css';
 
 class Skills extends Component {
