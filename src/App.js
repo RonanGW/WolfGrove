@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-scroll'
 import ReactGA from 'react-ga';
 import $ from 'jquery';
-import "animate.css/animate.min.css";
+//import "animate.css/animate.min.css";
 import './App.css';
 import Intro from './Intro.js';
 import About from './About.js';

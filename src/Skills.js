@@ -13,16 +13,38 @@ class Skills extends Component {
 
         if (this.props.data) {
             var skills = this.props.data.skills.map(function (skills) {
-                var percent = skills.level + "%";
-                var r = 100 - parseInt(skills.level);
-                var remainder = r.toString() + "%";
+                var starTwo = skills.level.map(function(level) {
+                    if (parseInt(skills.level) >= 2)
+                        return <AiFillStar />
+                    else
+                        return <AiOutlineStar />
+                })
+                var starThree = skills.level.map(function (level) {
+                    if (parseInt(skills.level) >= 3)
+                        return <AiFillStar />
+                    else
+                        return <AiOutlineStar />
+                })
+                var starFour = skills.level.map(function (level) {
+                    if (parseInt(skills.level) >= 4)
+                        return <AiFillStar />
+                    else
+                        return <AiOutlineStar />
+                })
+                var starFive = skills.level.map(function (level) {
+                    if (parseInt(skills.level) >= 5)
+                        return <AiFillStar />
+                    else
+                        return <AiOutlineStar />
+                })
                 return <li>
                         <div className="skill-container">
                             <em className="skill-title">{skills.name}</em>
-                            <div className="bar-container">
-                                <div style={{ width: percent, backgroundColor: "black", borderRadius: "3px 0 0 3px"}} />
-                                <div style={{ width: remainder, backgroundColor: "grey", borderRadius: "3px 0 0 3px"}} />
-                            </div>
+                            <AiFillStar />
+                            {starTwo}
+                            {starThree}
+                            {starFour}
+                            {starFive}
                         </div>
                     </li>
             })

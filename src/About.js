@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { saveAs } from "file-saver";
 import ScrollAnimation from 'react-animate-on-scroll';
-import "animate.css";
+//import "animate.css";
 import './App.css';
 
 class About extends Component {
