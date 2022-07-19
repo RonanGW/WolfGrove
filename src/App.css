@@ -11,6 +11,7 @@
 }
 
 .App-header {
+    z-index: 100;
     background-color: #048BC2;
     color: #E2F2F9;
     padding: 1vh;
@@ -388,10 +389,16 @@
         list-style: none;
     }
 
+        .bars li:hover {
+            background: gold;
+        }
+
 .skill-container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     margin-bottom: 18px;
+    font-size: 25px;
 }
 
 .skill-title {

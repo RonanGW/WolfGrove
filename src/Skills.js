@@ -13,10 +13,10 @@ class Skills extends Component {
 
         if (this.props.data) {
             var skills = this.props.data.skills.map(function (skills) {
-                return <li>
+                return <li className="skill-bar">
                         <div className="skill-container">
                             <em className="skill-title">{skills.name}</em>
-                        <StarRatingComponent
+                            <StarRatingComponent
                             name="rate1"
                             starCount={5}
                             value={parseInt(skills.level)}
