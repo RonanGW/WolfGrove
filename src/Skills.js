@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { AiFillStar, AiOutlineStar } from "react-icons/ai";
+import StarRatingComponent from 'react-star-rating-component';
 import './App.css';
 
 class Skills extends Component {
@@ -13,38 +13,16 @@ class Skills extends Component {
 
         if (this.props.data) {
             var skills = this.props.data.skills.map(function (skills) {
-                var starTwo = skills.level.map(function(level) {
-                    if (parseInt(skills.level) >= 2)
-                        return <AiFillStar />
-                    else
-                        return <AiOutlineStar />
-                })
-                var starThree = skills.level.map(function (level) {
-                    if (parseInt(skills.level) >= 3)
-                        return <AiFillStar />
-                    else
-                        return <AiOutlineStar />
-                })
-                var starFour = skills.level.map(function (level) {
-                    if (parseInt(skills.level) >= 4)
-                        return <AiFillStar />
-                    else
-                        return <AiOutlineStar />
-                })
-                var starFive = skills.level.map(function (level) {
-                    if (parseInt(skills.level) >= 5)
-                        return <AiFillStar />
-                    else
-                        return <AiOutlineStar />
-                })
                 return <li>
                         <div className="skill-container">
                             <em className="skill-title">{skills.name}</em>
-                            <AiFillStar />
-                            {starTwo}
-                            {starThree}
-                            {starFour}
-                            {starFive}
+                        <StarRatingComponent
+                            name="rate1"
+                            starCount={5}
+                            value={parseInt(skills.level)}
+                            starColor={"Red"}
+                            emptyStarColor={"green"}
+                        />
                         </div>
                     </li>
             })

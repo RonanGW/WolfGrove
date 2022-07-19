@@ -133,31 +133,31 @@
     "skills": [
       {
         "name": "ReactJS",
-        "level": [ "3" ]
+        "level": 3
       },
       {
         "name": "C++",
-        "level": [ "3" ]
+        "level": 3
       },
       {
         "name": "HTML",
-        "level": [ "4" ]
+        "level": 4
       },
       {
         "name": "CSS",
-        "level": [ "4" ]
+        "level": 4
       },
       {
         "name": "Python",
-        "level": [ "2" ]
+        "level": 4
       },
       {
         "name": "Java",
-        "level": [ "2" ]
+        "level": 2
       },
       {
         "name": "CUDA",
-        "level": [ "3" ]
+        "level": 3
       }
     ]
   },

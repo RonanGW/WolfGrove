@@ -56,7 +56,7 @@ class App extends Component {
                         <Link className="header-button" to="Intro" spy={true} smooth={true} offset={-120}>Intro</Link>
                         <Link className="header-button" to="About" spy={true} smooth={true} offset={-95}>About</Link>
                         <Link className="header-button" to="Resume" spy={true} smooth={true}>Experience</Link>
-                        <Link className="header-button" to="skills" spy={true} smooth={true}>Skills</Link>
+                        <Link className="header-button" to="Skills" spy={true} smooth={true}>Skills</Link>
                         <Link className="header-button" to="Portfolio" spy={true} smooth={true}>Portfolio</Link>
                         <Link className="header-button" to="Testimonials" spy={true} smooth={true}>Testimonials</Link>
                     </div>
