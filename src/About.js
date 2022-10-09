@@ -57,50 +57,50 @@ class About extends Component {
                         <div className="SectionNameLine" />
                     </h1>
                 </div>
-                <div className="About-content">
-                    <div className="About-left">
-                        <div className="About-left-content">
-                            <div className="About-profile">
-                                <div style={{display: "flex", flexDirection: "row"}}>
-                                    <img className="About-PFP" src={pfp} />
-                                    <div className="About-links-banner">
-                                        <button title="Download my Resume" className="DLLogo" onClick={this.DownloadResume}></button>
-                                        <button title="Link to my GitHub" className="GHLogo" onClick={this.Redirect.bind(this, "https://github.com/RonanGW")}></button>
-                                        <button title="Link to my LinkedIn" className="LILogo" onClick={this.Redirect.bind(this, "https://www.linkedin.com/in/ronan-wolfe/")}></button>
-                                    </div>
-                                </div>
-                                <div className="About-personal-info">
-                                    <p>{name}</p>
-                                </div>
-                                <div className="About-personal-info">
-                                    <p>{area}</p>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div className="About-right">
-                        <div className="About-item">
-                            <div className={this.state.interests ? 'fadeInInterests' : 'fadeOutInterests'}>
-                                <p><b>My Story</b></p>{bio}
-                                <div style={{paddingTop: "5px"}}>
-                                    <button className="Interests-Button" onClick={this.handleFade}>Read My Interests</button>
-                                </div>
-                            </div>
-                            <div className={this.state.interests ? 'fadeOutInterests' : 'fadeInInterests'}>
-                                My Interests
-                                <ul>
-                                    <li style={{ paddingBottom: "15px" }}>Full Stack Software Engineer</li>
-                                    <li style={{ paddingBottom: "15px" }}>Data Scientist</li>
-                                    <li style={{ paddingBottom: "15px" }}>Biotechnology</li>
-                                    <li style={{ paddingBottom: "15px" }}>IT</li>
-                                    <li style={{ paddingBottom: "15px" }}>Wildlife Conservation</li>
-                                </ul>
-                                <button className="Interests-Button" onClick={this.handleFade}>Read My Story</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {/*<div className="About-content">*/}
+                {/*    <div className="About-left">*/}
+                {/*        <div className="About-left-content">*/}
+                {/*            <div className="About-profile">*/}
+                {/*                <div style={{display: "flex", flexDirection: "row"}}>*/}
+                {/*                    <img className="About-PFP" src={pfp} />*/}
+                {/*                    <div className="About-links-banner">*/}
+                {/*                        <button title="Download my Resume" className="DLLogo" onClick={this.DownloadResume}></button>*/}
+                {/*                        <button title="Link to my GitHub" className="GHLogo" onClick={this.Redirect.bind(this, "https://github.com/RonanGW")}></button>*/}
+                {/*                        <button title="Link to my LinkedIn" className="LILogo" onClick={this.Redirect.bind(this, "https://www.linkedin.com/in/ronan-wolfe/")}></button>*/}
+                {/*                    </div>*/}
+                {/*                </div>*/}
+                {/*                <div className="About-personal-info">*/}
+                {/*                    <p>{name}</p>*/}
+                {/*                </div>*/}
+                {/*                <div className="About-personal-info">*/}
+                {/*                    <p>{area}</p>*/}
+                {/*                </div>*/}
+
+                {/*            </div>*/}
+                {/*        </div>*/}
+                {/*    </div>*/}
+                {/*    <div className="About-right">*/}
+                {/*        <div className="About-item">*/}
+                {/*            <div className={this.state.interests ? 'fadeInInterests' : 'fadeOutInterests'}>*/}
+                {/*                <p><b>My Story</b></p>{bio}*/}
+                {/*                <div style={{paddingTop: "5px"}}>*/}
+                {/*                    <button className="Interests-Button" onClick={this.handleFade}>Read My Interests</button>*/}
+                {/*                </div>*/}
+                {/*            </div>*/}
+                {/*            <div className={this.state.interests ? 'fadeOutInterests' : 'fadeInInterests'}>*/}
+                {/*                My Interests*/}
+                {/*                <ul>*/}
+                {/*                    <li style={{ paddingBottom: "15px" }}>Full Stack Software Engineer</li>*/}
+                {/*                    <li style={{ paddingBottom: "15px" }}>Data Scientist</li>*/}
+                {/*                    <li style={{ paddingBottom: "15px" }}>Biotechnology</li>*/}
+                {/*                    <li style={{ paddingBottom: "15px" }}>IT</li>*/}
+                {/*                    <li style={{ paddingBottom: "15px" }}>Wildlife Conservation</li>*/}
+                {/*                </ul>*/}
+                {/*                <button className="Interests-Button" onClick={this.handleFade}>Read My Story</button>*/}
+                {/*            </div>*/}
+                {/*        </div>*/}
+                {/*    </div>*/}
+                {/*</div>*/}
             </div>
         );
     }
